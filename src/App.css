@@ -51,23 +51,25 @@ header {
   }
 }
 
-.my_info  {
-  display: block;
-  white-space: nowrap;
-  width: 55ch;
-  border-right: 4px solid;
-  animation: typing 6s steps(20), blink .5s infinite step-end alternate;
-  overflow: hidden;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
+@media (min-width: 600px) {
+  .my_info  {
+    display: block;
+    white-space: nowrap;
+    width: 55ch;
+    border-right: 4px solid;
+    animation: typing 6s steps(20), blink .5s infinite step-end alternate;
+    overflow: hidden;
   }
-}
-
-@keyframes blink {
-  50% {
-    border-color: transparent;
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
   }
-} 
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  } 
+}

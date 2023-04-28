@@ -33,7 +33,7 @@ const Nav = () => {
 
   return (
     <header className="fixed top-0 left-0 z-50 w-full h-[50px] md:mx-auto dark:text-white opacity-[4px]">
-      <article className="nav md:max-w-[70%] flex justify-between items-center p-3 text-black relative md:mx-auto dark:text-white opacity-[4px] backdrop-blur-md ">
+      <article className="nav md:max-w-[7¿0%] flex justify-between items-center p-3 text-black relative md:mx-auto dark:text-white opacity-[4px] backdrop-blur-md ">
       <div className="flex items-center gap-2 hover:text-blue-600 hover:scale-110 hover:translate-x-2 transition-all hover:duration-200">
         <NavLink to="/">
           <i className="bx bxl-baidu text-lg"></i>
