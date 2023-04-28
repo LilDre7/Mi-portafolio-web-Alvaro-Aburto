@@ -1,6 +1,6 @@
 import React from "react";
 import ReactPlayer from "react-player";
-import "./Stack.css";
+import "./stack.css";
 
 const Stack = () => {
   return (
