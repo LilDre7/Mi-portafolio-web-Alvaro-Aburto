@@ -1,0 +1,20 @@
+.text_wrap  {
+  display: block;
+  white-space: nowrap;
+  width: 11ch;
+  border-right: 4px solid;
+  animation: typing 2s steps(20), blink .3s infinite step-end alternate;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
