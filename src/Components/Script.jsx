@@ -47,7 +47,7 @@ scene.add(point);
 // ? Perro es lo mas importante => loader para la animacion
 const gltfLoader = new GLTFLoader();
 gltfLoader.load(
-  "/public/dog.glb",
+  "/images/dog.glb",
   (gltf) => {
     const modelScene = gltf.scene;
     scene.add(modelScene);
