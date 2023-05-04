@@ -52,7 +52,7 @@ const Laptop = (props) => {
           transform
           occlude
           position={[0, 12.851, -5.38028]}
-          className="text-white w-[935px] h-[660px] rounded-3xl 
+          className="text-white w-[935px] h-[665px] rounded-3xl 
         -translate-x-2 -translate-y-3 overflow-y-auto container "
         >
           <Stack />
