@@ -1,0 +1,9 @@
+.imgtec:hover {
+  scale: 1.3;
+  animation-duration: 1s;
+  transition: ease-in-out 1s;
+  image-rendering: pixelated;
+  box-shadow: inset;
+  text-shadow: 1px solid red;
+  transform: rotateX(360deg) rotateY(360deg);
+}

@@ -1,57 +1,130 @@
-import React from "react";
-import ReactPlayer from "react-player";
-import "./stack.css";
+import "./stacks.css"
 
-const Stack = () => {
+export default () => {
   return (
-    <section className="">
-      <div className="">
-        <div className="">
+    <section className="stack">
+      <h2 className="text-center text-black text-4xl font-bold p-6">
+        Mis habilidades como desarrollador
+      </h2>
+
+      <h3 className="text-center text-3xl font-bold p-6 text-black ">
+        Lenguajes de programación y frameworks
+      </h3>
+
+      <section className=" grid grid-cols-2 gap-4 mt-8 ">
+        <div>
           <img
-            className="w-full h-[50vh] object- object-cover absolute top-0 left-0"
-            src="/images/bg-2.png"
+            className=" imgtec mx-auto w-[10rem] object-cover h-[10rem]"
+            src="/images/html5.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            className=" imgtec mx-auto w-[10rem] object-cover h-[10rem] "
+            src="/images/css.png"
             alt=""
           />
         </div>
 
-        <ReactPlayer
-          className="w-full h-full object-cover -z-50"
-          url="https://youtu.be/rrgOMpENU_Q?t=206"
-          width="100%"
-          height="20%"
-          muted={false}
-          playing={true}
-          volume={0.5}
-          loop={true}
-          style={{
-            position: "absolute",
-            top: "34%",
-            left: "50%",
-            transform: "translate(-50%, -50%)",
-            pointerEvents: "none",
-            objectFit: "cover",
-            opacity: 10,
-            background: "transparent",
-          }}
-        />
-      </div>
-      <div className="flex justify-center items-center text-center translate-y-24 p-4">
-        <p className="text-2xl text-black border-b-2 border-black dark:border-white z-50">
-          {" "}
-          <span className="text_wrap text-4xl text-black translate-x-32  md:translate-x-48">
-            Bienvenidos
-          </span>{" "}
-          <br />
-          <span className="shadow-b-black shadow-lg text-3xl md:text-4xl text-black ">
-            Algunas de las cosas que me interesan
-          </span>
-        </p>
-      </div>
-      <article className="translate-y-64">
-        
-      </article>
+        <div>
+          <img
+            className=" imgtec mx-auto w-[10rem] object-contain h-[10rem]  "
+            src="/images/tailwind.png"
+            alt=""
+          />
+        </div>
+
+        <div>
+          <img
+            className=" imgtec mx-auto w-[10rem] object-contain h-[10rem]  "
+            src="/images/react.png"
+            alt=""
+          />
+        </div>
+
+        <div>
+          <img
+            className=" imgtec mx-auto w-[10rem] object-contain h-[10rem]  "
+            src="/images/redux.png"
+            alt=""
+          />
+        </div>
+
+        <div>
+          <img
+            className=" imgtec mx-auto w-[10rem] object-contain h-[10rem]  "
+            src="/images/JS.png"
+            alt=""
+          />
+        </div>
+
+        <div>
+          <img
+            className=" imgtec mx-auto w-[10rem] object-contain h-[10rem]  "
+            src="/images/boot.png"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <h3 className="text-center text-3xl font-bold p-6 text-black ">
+        Mis tecnologías y utilidades para el desarrollar
+      </h3>
+
+      <section className=" grid grid-cols-2 gap-4 mt-8">
+
+        <div>
+          <img
+            className=" imgtec mx-auto w-[10rem] object-contain h-[10rem]  "
+            src="/images/vscode.png"
+            alt=""
+          />
+        </div>
+
+        <div>
+          <img
+            className=" imgtec mx-auto w-[10rem] object-contain h-[10rem]  "
+            src="/images/github.png"
+            alt=""
+          />
+        </div>
+
+
+        <div>
+          <img
+            className=" imgtec mx-auto w-[10rem] object-contain h-[10rem]  "
+            src="/images/termianal.png"
+            alt=""
+          />
+        </div>
+
+        <div>
+          <img
+            className="mx-auto w-[10rem] object-contain h-[10rem]  "
+            src="/images/git.png"
+            alt=""
+          />
+        </div>
+
+        <div className="mb-10" >
+          <img
+            className=" imgtec mx-auto w-[10rem] object-contain h-[10rem]  "
+            src="/images/notion.png"
+            alt=""
+          />
+        </div>
+
+        <div className="mb-10" >
+          <img
+            className=" imgtec mx-auto w-[10rem] object-contain h-[10rem]  "
+            src="/images/figma.png"
+            alt=""
+          />
+        </div>
+
+
+      </section>
     </section>
   );
 };
-
-export default Stack;

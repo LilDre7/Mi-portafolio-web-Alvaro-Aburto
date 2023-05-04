@@ -6,7 +6,7 @@ import Proyects from "./Components/Proyects";
 import Scene2 from "./Components/Scene2";
 import Nav from "./Components/Nav";
 import Diseños from "./Components/Diseños";
-import Stack from "./Components/Stack";
+import Scene from "./Components/Scene";
 
 function App() {
   return (
@@ -44,7 +44,15 @@ function App() {
               </>
             }
           />
-          <Route exact path="/Stack" element={<Stack />} />
+          <Route
+            exact
+            path="/Stack"
+            element={
+              <>
+                <Scene />
+              </>
+            }
+          />
           <Route
             path="*"
             element={

@@ -1,13 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
+import ModalForm from "./ModalForm";
 
 const Personalnfo = () => {
+  const [isShowForm, setisShowForm] = useState(false);
+
+  const handleClickModal = () => {
+    setisShowForm((isShowForm) => !isShowForm);
+  };
+
   return (
     <section className="m-6 relative mt-[-6rem] dark:bg-[#202023] dark:text-white">
       <div className="my_info text-center bg-[#e0d8cfa5] p-3 rounded-lg md:max-w-[70%] md:mx-auto md:text-lgdark:text-white">
-        <p className="" >Hola, soy Alvaro soy desarrollador de software en Costa Rica!</p>
+        <p className="">
+          Hola, soy Alvaro soy desarrollador de software en Costa Rica!
+        </p>
       </div>
       <article className="flex flex-col mt-3">
-        <h1 className="text_name text-left text-2xl font-bold">Alvaro Aburto Ocampo</h1>
+        <h1 className="text_name text-left text-2xl font-bold">
+          Alvaro Aburto Ocampo
+        </h1>
         <p className="text-xl mt-4">
           Digital Craftsman (Creativo / Developer / Artista){" "}
         </p>
@@ -117,7 +128,8 @@ const Personalnfo = () => {
           <ul className="flex flex-col mt-3 md:flex md:flex-row md:justify-around md:items-center md:gap-6 md:mt-6">
             <li className="pb-3 max-w-[9rem] flex items-center md:text-xl">
               <a
-                href=""
+                href="https://www.instagram.com/thelildree/"
+                target="_black"
                 className="cursor-pointer p-1 flex gap-2 text-[#3e7bed] hover:text-lg transition-all hover:duration-200 hover:bg-white hover:text-black justify-center rounded-md"
               >
                 <span className="flex items-center">
@@ -128,7 +140,8 @@ const Personalnfo = () => {
             </li>
             <li className="pb-3 max-w-[8rem] flex items-center md:text-xl ">
               <a
-                href=""
+                href="https://github.com/LilDre7"
+                target="_black"
                 className="cursor-pointer p-1 flex gap-2 text-[#3e7bed] hover:text-lg transition-all hover:duration-200 hover:text-black hover:bg-white justify-center rounded-md"
               >
                 <span>
@@ -139,7 +152,8 @@ const Personalnfo = () => {
             </li>
             <li className="pb-3 max-w-[8rem] flex items-center md:text-xl">
               <a
-                href=""
+                href="https://www.linkedin.com/in/alvaro-aburto-dev/"
+                target="_black"
                 className="hover:text-black cursor-pointer p-1 flex gap-2 text-[#3e7bed] hover:text-lg transition-all hover:duration-200 hover:bg-white justify-center rounded-md"
               >
                 <span>
@@ -150,7 +164,8 @@ const Personalnfo = () => {
             </li>
             <li className="pb-3 max-w-[8rem] flex items-center md:text-xl">
               <a
-                href=""
+                href="https://chatwith.io/es/s/lil-dree-developer"
+                target="_black"
                 className="hover:text-black cursor-pointer p-1 flex gap-2 text-[#3e7bed] hover:text-lg transition-all hover:duration-200 hover:bg-white justify-center rounded-md"
               >
                 <span>
@@ -163,27 +178,50 @@ const Personalnfo = () => {
         </div>
         <article className="md:flex md:flex-row md:justify-center">
           <div className="mb-3 flex justify-center items-center flex-col">
-            <img className="w-full object-right-top object-cover h-[15rem] mb-5  rounded-lg md:object-cover md:object-top md:w-[80%] " src="/images/logo1.jpg" alt="" />
-            <code className="text-center text-base" >Algunos de los diseños que he creado</code>
+            <img
+              className="w-full object-right-top object-cover h-[15rem] mb-5  rounded-lg md:object-cover md:object-top md:w-[80%] "
+              src="/images/logo1.jpg"
+              alt=""
+            />
+            <code className="text-center text-base">
+              Algunos de los diseños que he creado
+            </code>
           </div>
           <div className="mb-3 flex justify-center items-center flex-col">
-            <img className="w-full object-center object-cover h-[15rem] mb-5 rounded-lg md:object-cover md:object-center md:w-[100%] " src="/images/setup.jpeg" alt="" />
+            <img
+              className="w-full object-center object-cover h-[15rem] mb-5 rounded-lg md:object-cover md:object-center md:w-[100%] "
+              src="/images/setup.jpeg"
+              alt=""
+            />
             <code className="text-center text-base">Mi espacio de trabajo</code>
           </div>
         </article>
         <article>
-          <h2 className="text-start text-2xl font-bold border-b-4 border-b-black max-w-[10rem] dark:border-b-gray-500 dark:border-b-4" >Contactame</h2>
-          <p className="mt-3 text-start" >¡Hola! Si estás buscando un desarrollador de software, has llegado al lugar indicado. Si necesitas una mano amiga, no dudes en contactarme. Estoy disponible para responder cualquier pregunta o consulta que tengas. ¡Hablemos pronto!</p>
+          <ModalForm setisShowForm={setisShowForm} isShowForm={isShowForm} />
+          <h2 className="text-start text-2xl font-bold border-b-4 border-b-black max-w-[10rem] dark:border-b-gray-500 dark:border-b-4">
+            Contactame
+          </h2>
+          <p className="mt-3 text-start">
+            ¡Hola! Si estás buscando un desarrollador de software, has llegado
+            al lugar indicado. Si necesitas una mano amiga, no dudes en
+            contactarme. Estoy disponible para responder cualquier pregunta o
+            consulta que tengas. ¡Hablemos pronto!
+          </p>
           <div className="text-center p-3 mt-5">
-            <button className="w-[50%] bg-blue-500 text-white p-3 rounded-lg hover:bg-orange-400 duration-200 transition-all">
-              <span>
-              <i className='bx bxl-gmail pr-3'></i>
+            <button
+              onClick={handleClickModal}
+              className="css-button-retro--black w-[50%] text-white"
+            >
+              <span className="">
+                <i className="bx bxl-gmail pr-3"></i>
+                Contactame
               </span>
-              Contactame
             </button>
           </div>
           <div className="text-center pb-3">
-            <code className="" >© 2023 Alvaro Aburto. Todos los derechos reservados.</code>
+            <code className="m-2">
+              © 2023 Alvaro Aburto. Todos los derechos reservados.
+            </code>
           </div>
         </article>
       </article>
