@@ -10,7 +10,7 @@ const Personalnfo = () => {
 
   return (
     <section className="m-6 relative mt-[-6rem] dark:bg-[#202023] dark:text-white">
-      <div className="my_info text-center bg-[#e0d8cfa5] p-3 rounded-lg md:max-w-[70%] md:mx-auto md:text-lgdark:text-white">
+      <div className="my_info text-center bg-[#e0d8cfa5] p-3 rounded-lg md:max-w-[70%] md:mx-auto md:text-base dark:text-white">
         <p className="">
           Hola, soy Alvaro soy desarrollador de software en Costa Rica!
         </p>

@@ -45,15 +45,13 @@ const Laptop = (props) => {
         name="Screen"
         castShadow
         receiveShadow
-        geometry={nodes.Screen.geometry}
-        material={materials.Screen}
       >
         <Html
           transform
           occlude
-          position={[0, 12.851, -5.38028]}
-          className="text-white w-[935px] h-[665px] rounded-3xl 
-        -translate-x-2 -translate-y-3 overflow-y-auto container "
+          position={[0, 12.851, -5.39000]}
+          className=" w-[950px] h-[665px] translate-x-[-6px] translate-y-[-6px] rounded-2xl 
+          xl:translate-x-[6px] xl:rounded-2xl container_scroll overflow-auto pantalla__grande "
         >
           <Stack />
         </Html>

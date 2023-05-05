@@ -9,9 +9,9 @@ export default function App() {
         onEnter={() => console.log("Enter")}
         onLeave={() => console.log("Leave")}
         onRotate={(x, y) => console.log("Rotate", x)}
-
+        rotateTouch={false}
       >
-        <article className="w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 content-center justify-items-center m-3 dark:text-white bg-transparent dark:hover:bg-transparent hover:bg-slate-200/25 ">
+        <article className="sm:w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 content-center justify-items-center m-3 dark:text-white bg-transparent dark:hover:bg-transparent hover:bg-slate-200/25">
           <div className="w-[90%] text-center">
             <div className="">
               <a href="https://lilrickandmorty.netlify.app/" target="_blank">

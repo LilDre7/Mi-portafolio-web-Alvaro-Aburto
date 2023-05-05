@@ -9,14 +9,14 @@ function Scene() {
     <div className="container mt-10">
       <Canvas
         camera={{
-          position: [0, 6, 31],
+          position: [0, 6, 35],
           fov: 65,
         }}
 
           gl={{
             outputEncoding: THREE.BasicDepthPacking,
             toneMapping: THREE.ACESFilmicToneMapping,
-            toneMappingExposure: 3.5,
+            toneMappingExposure: 4.5,
           }}
       >
         <Suspense fallback={null}>
@@ -34,7 +34,7 @@ function Scene() {
           color={"#ffffff"}
         />
         <OrbitControls 
-          target={[0, 5, 1]}
+          target={[0, 6, 1]}
           enablePan={false}
         />
       </Canvas>
