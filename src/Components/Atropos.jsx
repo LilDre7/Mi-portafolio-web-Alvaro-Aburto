@@ -22,7 +22,7 @@ export default function App() {
                 />
               </a>
             </div>
-            <div className="rounded-lg mt-3 dark:shadow-white w-[80%] mx-auto md:w-full ">
+            <div className=" w-full mx-auto rounded-lg mt-6 dark:shadow-white md:w-full ">
               <h4 className="text-center p-2 font-bold">
                 Proyecto de Rick and morty
               </h4>
@@ -46,7 +46,7 @@ export default function App() {
                   CSS
                 </code>
               </span>
-              <div classname="">
+              <div className="">
                 <p className="p-2 text-center text-black font-thin dark:text-white">
                   Proyecto creado por mi persona dale un vistazo es muy
                   intersante
@@ -65,7 +65,7 @@ export default function App() {
                 />
               </a>
             </div>
-            <div className=" rounded-lg mt-3 dark:shadow-white w-[80%] mx-auto md:w-full">
+            <div className=" w-full mx-auto rounded-lg mt-6 dark:shadow-white md:w-full">
               <h4 className="text-center p-2 font-bold">
                 Proyecto ¿Cual es tu clima?
               </h4>
@@ -89,7 +89,7 @@ export default function App() {
                   CSS
                 </code>
               </span>
-              <div classname="">
+              <div className="">
                 <p className="p-2 text-center text-black font-thin dark:text-white">
                   Proyecto para saber tu clima donde sea que te encuntres.
                   Disfrutalo!
@@ -108,7 +108,7 @@ export default function App() {
                 />
               </a>
             </div>
-            <div className="rounded-lg mt-3  dark:shadow-white w-[80%] mx-auto md:w-full ">
+            <div className=" w-full mx-auto rounded-lg mt-6 dark:shadow-white md:w-full ">
               <h4 className="text-center p-2 font-bold">
                 Proyecto ¿Cual es tu suerte?
               </h4>
@@ -132,7 +132,7 @@ export default function App() {
                   CSS
                 </code>
               </span>
-              <div classname="">
+              <div className="">
                 <p className="p-2 text-center text-black font-thin dark:text-white">
                   Proyecto con dinamica con la muy conocida API de la suerte.
                 </p>
@@ -144,13 +144,13 @@ export default function App() {
             <div>
               <a href="https://lildreegame.netlify.app/" target="_black">
                 <img
-                  className="w-[100%] h-[11rem] object-contain object-center hover:scale-90 transition duration-300 ease-in-out"
+                  className="w-[100%] h-[12rem] object-contain object-center hover:scale-90 transition duration-300 ease-in-out"
                   src="/images/memory.png"
                   alt=""
                 />
               </a>
             </div>
-            <div className=" rounded-lg mt-6 dark:shadow-white w-[80%] mx-auto md:w-full ">
+            <div className=" w-full mx-auto rounded-lg mt-6 dark:shadow-white md:w-full">
               <h4 className="text-center p-2 font-bold">
                 Proyecto ¿Prueba tu agilidad mental?
               </h4>
@@ -169,7 +169,7 @@ export default function App() {
                   CSS
                 </code>
               </span>
-              <div classname="">
+              <div className="">
                 <p className=" p-2 text-center text-black font-thin dark:text-white">
                   Proyecto creado con vanilla el cual es juego para saber que
                   tan rapida es tu memoria espero te guste.
@@ -212,8 +212,8 @@ export default function App() {
                   CSS
                 </code>
               </span>
-              <div classname="">
-                <p className=" p-2 text-center text-black font-thin dark:text-white">
+              <div className="">
+                <p className="p-2 text-center text-black font-thin dark:text-white">
                   Proyecto creado con React y React/toolkit un proyecto donde encontraras todos tus pokemones favoritas,que esperas para probarlo.
                 </p>
               </div>

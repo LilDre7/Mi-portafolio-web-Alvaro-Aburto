@@ -11,7 +11,7 @@ import Scene from "./Components/Scene";
 function App() {
   return (
     <BrowserRouter>
-      <div className="App">
+      <div className="App dark:bg-[#202023] ">
         <Nav />
         <Routes>
           <Route

@@ -75,6 +75,14 @@ export default () => {
                   alt=""
                 />
               </div>
+
+              <div>
+                <img
+                  className=" imgtec mx-auto w-[10rem] object-contain h-[10rem]  "
+                  src="/images/arbol.png"
+                  alt=""
+                />
+              </div>
             </section>
 
             <h3 className="text-center text-3xl font-bold p-6 text-black ">

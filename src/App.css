@@ -9,8 +9,16 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(240, 231, 219);
+  background-color: #f0e7db;
   font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.dark{
+  background-color: #202023;
+}
+
+.light{
+  background-color: #f0e7db;
 }
 
 .App {
@@ -166,3 +174,4 @@ header {
     translate: 14px;
   }
 }
+

@@ -179,7 +179,7 @@ const Personalnfo = () => {
         <article className="md:flex md:flex-row md:justify-center">
           <div className="mb-3 flex justify-center items-center flex-col">
             <img
-              className="w-full object-right-top object-cover h-[15rem] mb-5  rounded-lg md:object-cover md:object-top md:w-[80%] "
+              className="w-full object-right-top object-cover h-[15rem] mb-5  rounded-lg md:object-cover md:object-top md:w-[80%] sm:grid grid-cols-2 hover:shadow-lg hover:scale-90 duration-200 transition-all hover:bg-black dark:hover:shadow-white"
               src="/images/logo1.jpg"
               alt=""
             />
@@ -189,7 +189,7 @@ const Personalnfo = () => {
           </div>
           <div className="mb-3 flex justify-center items-center flex-col">
             <img
-              className="w-full object-center object-cover h-[15rem] mb-5 rounded-lg md:object-cover md:object-center md:w-[100%] "
+              className="w-full object-center object-cover h-[15rem] mb-5 rounded-lg md:object-cover md:object-center md:w-[100%] sm:grid grid-cols-2 hover:shadow-lg hover:scale-90 duration-200 transition-all  hover:bg-black dark:hover:shadow-white"
               src="/images/setup.jpeg"
               alt=""
             />

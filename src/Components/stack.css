@@ -19,3 +19,9 @@
     border-color: transparent;
   }
 }
+
+.formulario {
+  background-image: url(/images/form.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
