@@ -45,7 +45,8 @@ const Nav = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 z-50 w-full dark:border-b-4 dark:border-white/5 h-[50px] sm:mx-auto bg-[#f4ede400] border-b-4 border-white border-opacity-75 dark:text-white opacity-[10px] dark:bg-[#202023] backdrop-blur-md dark:bg-black/20">
+    <header className="fixed top-0 left-0 z-50 w-full dark:border-b-4 dark:border-white/5 h-[50px] sm:mx-auto bg-[#f4ede400] border-b-4 border-white border-opacity-75 dark:text-white 
+    opacity-[10px] dark:bg-[#202023] backdrop-blur-md dark:bg-black/20">
       <article className="nav sm:max-w-[100%] lg:max-w-[80%] flex justify-between items-center p-2 text-black relative md:mx-auto dark:text-white opacity-[10px] backdrop-blur-md ">
         <div className="flex items-center gap-2 hover:text-blue-600 hover:scale-110 hover:translate-x-2 transition-all hover:duration-200">
           <NavLink to="/">
@@ -54,7 +55,7 @@ const Nav = () => {
           </NavLink>
         </div>
 
-        <div className="flex justify-center items-center gap-2 md:order-4">
+        <div className="flex justify-center mt-[-3px] sm:mt-0 items-center gap-2 md:order-4">
             <div>
       <ReactSwitch
         onChange={handleChangeTheme}
@@ -82,7 +83,7 @@ const Nav = () => {
     </div>
           <i
             onClick={handleClick}
-            className="bx bx-menu md:hidden cursor-pointer bg-slate-400/25 p-1 rounded-[3px] text-2xl"
+            className="bx bx-menu md:hidden cursor-pointer bg-slate-400/25 p-1 rounded-[3px] text-xl"
           ></i>
         </div>
         <nav

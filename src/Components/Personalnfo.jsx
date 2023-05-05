@@ -47,11 +47,12 @@ const Personalnfo = () => {
           mi portafolio, ¡espero que lo disfrutes tanto como yo disfruté
           creándolo!
         </p>
-        <button className="flex items-center mt-6 p-3 rounded-xl text-white bg-emerald-500 max-w-[10rem] mx-auto hover:bg-emerald-950 transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-lg shadow-black/50  ">
-          {" "}
+        <a href="https://www.ane.cr/Curriculo" target="_black">
+        <button className="flex items-center mt-6 p-3 rounded-xl text-white bg-emerald-500 max-w-[10rem] mx-auto hover:bg-emerald-950 transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-lg shadow-black/50 border-b-4 border-black hover:border-white dark:border-white ">
           Mi Portafolio
           <i className="bx bx-code-alt pl-3"></i>
         </button>
+        </a>
       </article>
       <article className="mt-3">
         <div>
