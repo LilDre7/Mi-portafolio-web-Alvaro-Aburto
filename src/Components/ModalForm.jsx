@@ -75,28 +75,33 @@ const ModalForm = ({ isShowForm, setisShowForm }) => {
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="flex flex-col gap-4  p-2 text-black text-center z-50"
+          className="flex flex-col gap-4 p-2 text-black text-center z-50"
         >
-          <h1 className="text-center text-2xl font-bold pt-2 ">
+          <h1 className="text-center text-2xl font-bold pt-2 flex flex-col mx-auto w-full justify-center items-center ">
             <span className="border-b-slate-700 border-b-2">Hola!</span>
-            <span className="pl-4">Contactame 👨🏾‍💻</span>
+            <span className="mx-auto">
+              <span>
+                <i className='bx bxl-mailchimp text-3xl text-black  translate-y-1 -translate-x-3 '></i>
+              </span>
+              Contactame 
+            </span>
           </h1>
 
-          <label className="bg-black text-white mx-auto w-20 rounded-md p-[0.2rem] border-b-4 border-green-500 ">Name</label>
+          <label className="bg-black text-white mx-auto w-[80%] rounded-md p-[0.2rem] border-b-4 border-green-500 ">Name</label>
           <input
             className="border-2 border-black rounded-md placeholder:pl-2 "
             type="text"
             name="user_name"
             placeholder="Escribe tu nombre ⚗️"
           />
-          <label className="bg-black text-white mx-auto w-20  rounded-md p-[0.2rem] border-b-4 border-green-500 ">Email</label>
+          <label className="bg-black text-white mx-auto w-[80%] rounded-md p-[0.2rem] border-b-4 border-green-500 ">Email</label>
           <input
-            className="border-2 border-black rounded-md pl-2"
+            className="border-2 border-black rounded-md pl-2 placeholder:text-sm"
             type="email"
             name="user_email"
-            placeholder="Escribe tu email ⚗️ "
+            placeholder="Escribe tu correo ⚗️"
           />
-          <label className="bg-black text-white mx-auto w-20  rounded-md p-[0.2rem] border-b-4 border-green-500 ">Message</label>
+          <label className="bg-black text-white mx-auto w-[80%]  rounded-md p-[0.2rem] border-b-4 border-green-500 ">Message</label>
           <textarea
             placeholder="Hola, dime en que te puedo ayudar!"
             className="border-2 border-black rounded-md text-sm placeholder:text-center p-1"
@@ -106,13 +111,15 @@ const ModalForm = ({ isShowForm, setisShowForm }) => {
           <input
             autoComplete="Me gustaria tu ayuda para mi proyecto o solo quiero hablar contigo, eres un crack!"
             className="bg-black text-white p-1 rounded-lg cursor-pointer border-b-4 
-            border-green-500"
+            border-green-500 w-[80%] mx-auto "
             type="submit"
-            value="Send"
+            value="Enviar"
           />
         </form>
         <button onClick={handleClose}>
-          <i className="bx bx-x text-2xl absolute top-2 right-2 bg-black/50 rounded-md p-1 border-4 border-red-500 cursor-pointer "></i>
+          <i 
+          className="bx bx-x text-2xl absolute top-0 right-0 rounded-md p-1 cursor-pointer hover:text-red-600 hover:scale-150">
+          </i>
         </button>
       </div>
     </section>

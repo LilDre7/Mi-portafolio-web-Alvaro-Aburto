@@ -51,7 +51,8 @@ const Laptop = (props) => {
           occlude
           position={[0, 12.851, -5.39000]}
           className=" w-[950px] h-[665px] translate-x-[-6px] translate-y-[-6px] rounded-2xl 
-          xl:translate-x-[6px] xl:rounded-2xl container_scroll overflow-auto pantalla__grande "
+          xl:translate-x-[4px] xl:rounded-2xl container_scroll overflow-auto pantalla__grande 
+          lg:translate-x-[1px]"
         >
           <Stack />
         </Html>
