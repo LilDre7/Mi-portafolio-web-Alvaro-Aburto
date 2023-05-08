@@ -1,3 +1,4 @@
+import { progress } from "framer-motion";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
@@ -20,6 +21,7 @@ scene.add(camera);
 const renderer = new THREE.WebGLRenderer();
 renderer.setClearColor(0xffffff);
 renderer.alpha = true;
+renderer.autoClearColor;
 
 // ************** RESIZE DEL RENDER ************** //
 const resize = () => {
@@ -32,13 +34,16 @@ window.addEventListener("resize", resize);
 // **************** Luces para los objetos **************** //
 
 // Luz para usarlo cuando desaparece por el THREE.MeshStandardMaterial
-const AO = new THREE.AmbientLight(0xf4ede4, 1);
+const AO = new THREE.AmbientLight(0xcccccc, 1.3);
 scene.add(AO);
 
-const point = new THREE.PointLight(0xf4ede4, 1);
-point.position.y = 5;
-point.position.x = 5;
+const point = new THREE.PointLight(0xcccccc, 0.9);
+point.position.y = 8;
 scene.add(point);
+
+const directionLigth = new THREE.DirectionalLight(0xcccccc, 0.7);
+directionLigth.position.set(5);
+scene.add(directionLigth);
 
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! //
 

@@ -1,20 +1,26 @@
 import "./stacks.css";
+import { motion } from "framer-motion";
 
 export default () => {
   return (
-    <div className="page__container">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="page__container"
+    >
       <div className="page__wrapper">
         <div className="page__hero">
           <div className="page__image"></div>
           <div className="page__text"></div>
           <section className="stack relative h-full w-full">
             <span className="">
-              <i 
-              className="bx bxl-zoom absolute text-black/60  text-8xl top-0 left-0 translate-x-8
+              <i
+                className="bx bxl-zoom absolute text-black/60  text-8xl top-0 left-0 translate-x-8
                 hover:scale-150 transition-all duration-300 hover:text-blue-600 hover:hue-rotate-30
                 cursor-zoom-in hover:row-end-auto hover:transition-transform hover:rotate-[360deg] hover:ring-offset-teal-400
-              ">
-              </i>
+              "
+              ></i>
             </span>
             <h2 className="text-center text-black text-4xl font-bold p-6">
               Mis habilidades como desarrollador
@@ -144,6 +150,6 @@ export default () => {
           </section>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };

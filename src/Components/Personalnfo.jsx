@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ModalForm from "./ModalForm";
+import { motion } from "framer-motion";
 
 const Personalnfo = () => {
   const [isShowForm, setisShowForm] = useState(false);
@@ -9,7 +10,13 @@ const Personalnfo = () => {
   };
 
   return (
-    <section className="m-6 relative mt-[-6rem] dark:bg-[#202023] dark:text-white">
+    <motion.section
+      initial={{ width: 0 }}
+      animate={{  width: "100%" }}
+      exit={{ x: "100%" }}
+      transition={{ duration: 1 }}
+      className="m-6 relative mt-[-6rem] dark:bg-[#202023] dark:text-white"
+    >
       <div className="my_info text-center bg-[#e0d8cfa5] p-3 rounded-lg md:max-w-[70%] md:mx-auto md:text-base dark:text-white">
         <p className="">
           Hola, soy Alvaro soy desarrollador de software en Costa Rica!
@@ -48,10 +55,10 @@ const Personalnfo = () => {
           creándolo!
         </p>
         <a href="https://www.ane.cr/Curriculo" target="_black">
-        <button className="flex items-center mt-6 p-3 rounded-xl text-white bg-emerald-500 max-w-[10rem] mx-auto hover:bg-emerald-950 transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-lg shadow-black/50 border-b-4 border-black hover:border-white dark:border-white ">
-          Mi Portafolio
-          <i className="bx bx-code-alt pl-3"></i>
-        </button>
+          <button className="flex items-center mt-6 p-3 rounded-xl text-white bg-emerald-500 max-w-[10rem] mx-auto hover:bg-emerald-950 transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-lg shadow-black/50 border-b-4 border-black hover:border-white dark:border-white ">
+            Mi Portafolio
+            <i className="bx bx-code-alt pl-3"></i>
+          </button>
         </a>
       </article>
       <article className="mt-3">
@@ -226,7 +233,7 @@ const Personalnfo = () => {
           </div>
         </article>
       </article>
-    </section>
+    </motion.section>
   );
 };
 

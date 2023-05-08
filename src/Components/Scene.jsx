@@ -3,14 +3,20 @@ import Laptop from "./Laptop";
 import { OrbitControls } from "@react-three/drei";
 import React, { Suspense } from "react";
 import * as THREE from 'three';
+import { motion } from "framer-motion";
 
 function Scene() {  
   return (
-    <div className="container mt-10">
+    <motion.section 
+    initial={{ width: 0 }}
+    animate={{  width: "100%" }}
+    exit={{ z: "100%" }}
+    transition={{ duration: 1 }}
+    className="container mt-10">
       <Canvas
         camera={{
           position: [0, 6, 35],
-          fov: 65,
+          fov: 55,
         }}
 
           gl={{
@@ -24,7 +30,7 @@ function Scene() {
         </Suspense>
 
         <directionalLight 
-          position={[10 , 10, 10]}
+          position={[14 , 14, 14]}
           color={"#ffffff"}
           intensity={1.3}
         />
@@ -34,11 +40,11 @@ function Scene() {
           color={"#ffffff"}
         />
         <OrbitControls 
-          target={[0, 6, 1]}
+          target={[0, 4, 1]}
           enablePan={false}
         />
       </Canvas>
-    </div>
+    </motion.section>
   );
 }
 

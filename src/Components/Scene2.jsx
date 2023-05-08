@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import { mountScene } from "./Script";
+import { motion } from "framer-motion";
 
 const Scene2 = () => {
   const mountRef = useRef(null);
@@ -16,7 +17,10 @@ const Scene2 = () => {
   }, []);
 
   return (
-    <div className="container3D dark:bg-[#202023] mt-20 " ref={mountRef}></div>
+    <motion.section
+      className="container3D dark:bg-[#202023] mt-20 "
+      ref={mountRef}
+    ></motion.section>
   );
 };
 

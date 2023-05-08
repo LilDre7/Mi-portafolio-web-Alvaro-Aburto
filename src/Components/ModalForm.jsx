@@ -89,14 +89,14 @@ const ModalForm = ({ isShowForm, setisShowForm }) => {
 
           <label className="bg-black text-white mx-auto w-[80%] rounded-md p-[0.2rem] border-b-4 border-green-500 ">Name</label>
           <input
-            className="border-2 border-black rounded-md placeholder:pl-2 "
+            className="border-2 border-black rounded-md outline-none p-1"
             type="text"
             name="user_name"
             placeholder="Escribe tu nombre ⚗️"
           />
           <label className="bg-black text-white mx-auto w-[80%] rounded-md p-[0.2rem] border-b-4 border-green-500 ">Email</label>
           <input
-            className="border-2 border-black rounded-md pl-2 placeholder:text-sm"
+            className="border-2 border-black rounded-md outline-none p-1"
             type="email"
             name="user_email"
             placeholder="Escribe tu correo ⚗️"
@@ -104,7 +104,7 @@ const ModalForm = ({ isShowForm, setisShowForm }) => {
           <label className="bg-black text-white mx-auto w-[80%]  rounded-md p-[0.2rem] border-b-4 border-green-500 ">Message</label>
           <textarea
             placeholder="Hola, dime en que te puedo ayudar!"
-            className="border-2 border-black rounded-md text-sm placeholder:text-center p-1"
+            className="border-2 border-black rounded-md text-sm placeholder:text-center p-1 outline-none "
             name="message"
           />
 

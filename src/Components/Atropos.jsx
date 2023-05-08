@@ -1,8 +1,15 @@
 import Atropos from "atropos/react";
+import { motion } from "framer-motion";
+
 
 export default function App() {
   return (
-    <div id="app">
+    <motion.section 
+    initial={{ width: 0 }}
+    animate={{  width: "100%" }}
+    exit={{ y: "100%" }}
+    transition={{ duration: 1 }}
+    id="app">
       <Atropos
         shadow={false}
         duration={4000}
@@ -221,6 +228,6 @@ export default function App() {
           </div>
         </article>
       </Atropos>
-    </div>
+    </motion.section>
   );
 }
