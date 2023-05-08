@@ -7,8 +7,8 @@ export default function App() {
     <motion.section 
     initial={{ width: 0 }}
     animate={{  width: "100%" }}
-    exit={{ y: "100%" }}
-    transition={{ duration: 1 }}
+    exit={{ x: "100%" }}
+    transition={{ duration: 2 }}
     id="app">
       <Atropos
         shadow={false}

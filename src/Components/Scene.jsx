@@ -10,13 +10,13 @@ function Scene() {
     <motion.section 
     initial={{ width: 0 }}
     animate={{  width: "100%" }}
-    exit={{ z: "100%" }}
+    exit={{ x: "100%" }}
     transition={{ duration: 1 }}
     className="container mt-10">
       <Canvas
         camera={{
-          position: [0, 6, 35],
-          fov: 55,
+          position: [0, 6, 37],
+          fov: 70,
         }}
 
           gl={{

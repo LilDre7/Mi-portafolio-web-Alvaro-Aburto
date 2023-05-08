@@ -13,11 +13,11 @@ body {
   font-family: "M PLUS Rounded 1c", sans-serif;
 }
 
-.dark{
+.dark {
   background-color: #202023;
 }
 
-.light{
+.light {
   background-color: #f0e7db;
 }
 
@@ -185,4 +185,25 @@ header {
   .pantalla__grande {
     translate: 5px;
   }
+}
+
+body::-webkit-scrollbar {
+  width: 1rem;
+  background-color: rgb(255, 255, 255);
+}
+
+body::-webkit-scrollbar-thumb {
+  width: 1rem;
+  border-radius: 10px;
+  background: #dbe6f6;
+  background: -webkit-linear-gradient(
+    to right,
+    #c5796d,
+    #dbe6f6
+  );
+  background: linear-gradient(
+    to right,
+    #c5796d,
+    #dbe6f6
+  );
 }
