@@ -113,6 +113,11 @@ header {
   background: linear-gradient(to right, #37b8d1, #b2fefa);
 }
 
+.container_scroll::-webkit-scrollbar-thumb:hover {
+  background: #b2fefa;
+  transition: ease-in-out;
+}
+
 .stack {
   background-image: url("https://images.unsplash.com/photo-1650986656202-c8ceceb9b1ae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2064&q=80");
   /* background-color: #3e2287;

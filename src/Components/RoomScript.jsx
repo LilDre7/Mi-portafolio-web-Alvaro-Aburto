@@ -6,12 +6,12 @@ let currentMount = null;
 
 // Creando la ecena
 const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(45, 100 / 100, 0.1, 1000);
+const camera = new THREE.PerspectiveCamera(25, 1, 0.1, 1000);
 
 // ? Configurando la posición de la cámara
-camera.position.y = 9;
-camera.position.z = 9;
-camera.position.x = 9;
+camera.position.y = 95;
+camera.position.z = -65;
+camera.position.x = 130;
 
 // Camera es nuestro punto de vista
 scene.add(camera);
@@ -33,17 +33,14 @@ window.addEventListener("resize", resize);
 // **************** Luces para los objetos **************** //
 
 // Luz para usarlo cuando desaparece por el THREE.MeshStandardMaterial
-const ambientLight = new THREE.AmbientLight(0xcccccc, 1);
+const ambientLight = new THREE.AmbientLight(0xB8A192, 0.8);
 scene.add(ambientLight);
 
-// const AO = new THREE.AmbientLight(0xcccccc, 1.3);
-// scene.add(AO);
-
-const point = new THREE.PointLight(0xcccccc, 0.9);
+const point = new THREE.PointLight(0xB8A192, 1);
 point.position.y = 8;
 scene.add(point);
 
-const directionLigth = new THREE.DirectionalLight(0xcccccc, 0.7);
+const directionLigth = new THREE.DirectionalLight(0xcccccc, 1);
 directionLigth.position.set(5);
 scene.add(directionLigth);
 
@@ -54,16 +51,13 @@ scene.add(directionLigth);
 // ? Perro es lo mas importante => loader para la animacion
 const gltfLoader = new GLTFLoader();
 gltfLoader.load(
-  "/images/dog.glb",
+  "/images/room.glb",
   (gltf) => {
     const modelScene = gltf.scene;
     scene.add(modelScene);
 
     function animate() {
       requestAnimationFrame(animate);
-
-      // Actualizar la rotación del modelo //
-      modelScene.rotation.y += 0.002;
 
       // Renderizar la escena
       renderer.render(scene, camera);
@@ -94,8 +88,8 @@ const animacion = () => {
 animacion();
 
 // Exportar la funcion del componte del renderizado el renderizado
-export const mountScene = (mountRef) => {
-  currentMount = mountRef.current;
+export const PixelRoom = (pixel) => {
+  currentMount = pixel.current;
   resize();
   currentMount.appendChild(renderer.domElement);
 };

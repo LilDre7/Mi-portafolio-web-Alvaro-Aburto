@@ -5,10 +5,10 @@ import Home from "../Components/Home";
 import Nav from "../Components/Nav";
 import Scene2 from "../Components/Scene2";
 import Proyects from "../Components/Proyects";
-import Diseños from "../Components/Diseños";
 import Scene from "../Components/Scene";
 import ErrorNotFound from "../Components/ErrorNotFound";
 import { AnimatePresence } from "framer-motion";
+import PixelRoom from "../Components/PixelRoom";
 
 const AnimatedRoute = () => {
   const location = useLocation();
@@ -19,7 +19,7 @@ const AnimatedRoute = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 5000);
+    }, 0);
   }, []);
 
   return (
@@ -58,8 +58,7 @@ const AnimatedRoute = () => {
                 path="/Diseños"
                 element={
                   <>
-                    <Scene2 />
-                    <Diseños />
+                    <PixelRoom/>
                   </>
                 }
               />

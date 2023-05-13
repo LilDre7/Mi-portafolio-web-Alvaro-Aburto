@@ -83,7 +83,7 @@ const Nav = () => {
             isShowNav
               ? "left-0 z-50 min-h-screen dark:text-white"
               : "-left-full"
-          } duration-300 flex flex-col gap-5 text-black bg-[#f4ede4] min-h-screen w-full justify-center items-center text-3xl uppercase md:static md:flex md:flex-row md:gap-10 md:w-auto md:min-h-0 md:bg-transparent md:dark:md:bg-transparent dark:bg-[#0b0b0bf8] md:jus md:text-base md:items-center md:text-black md:p-0 dark:text-white}`}
+          } duration-300 flex flex-col gap-5 text-black bg-[#f4ede4] min-h-screen w-full justify-center items-center text-3xl md:static md:flex md:flex-row md:gap-10 md:w-auto md:min-h-0 md:bg-transparent md:dark:md:bg-transparent dark:bg-[#0b0b0bf8] md:jus md:text-base md:items-center md:text-black md:p-0 dark:text-white}`}
         >
           <NavLink
             to="/"
@@ -116,7 +116,7 @@ const Nav = () => {
                 : "hover:border-b-4 border-black hover:bg-blue-300 rounded-md tracking-widest p-1 duration-200 transition-all dark:border-white text-black dark:text-white"
             }
           >
-            DISEÑOS
+            Room
           </NavLink>
           <NavLink
             to="/Stack"
