@@ -177,13 +177,18 @@ header {
 
 @media (min-width: 1300px) {
   .pantalla__grande {
-    translate: -4px;
+    translate: -14px;
+  }
+  .container_scroll::-webkit-scrollbar {
+    width: 3rem;
+    background-color: #1A1A1A;
+    border-radius: 27px;
   }
 }
 
 @media (min-width: 1000px) {
   .pantalla__grande {
-    translate: 5px;
+    translate: 2px;
   }
 }
 
@@ -196,14 +201,6 @@ body::-webkit-scrollbar-thumb {
   width: 1rem;
   border-radius: 10px;
   background: #dbe6f6;
-  background: -webkit-linear-gradient(
-    to right,
-    #c5796d,
-    #dbe6f6
-  );
-  background: linear-gradient(
-    to right,
-    #c5796d,
-    #dbe6f6
-  );
+  background: -webkit-linear-gradient(to right, #c5796d, #dbe6f6);
+  background: linear-gradient(to right, #c5796d, #dbe6f6);
 }

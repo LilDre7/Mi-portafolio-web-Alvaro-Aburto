@@ -34,8 +34,11 @@ window.addEventListener("resize", resize);
 // **************** Luces para los objetos **************** //
 
 // Luz para usarlo cuando desaparece por el THREE.MeshStandardMaterial
-const AO = new THREE.AmbientLight(0xcccccc, 1.3);
-scene.add(AO);
+const ambientLight = new THREE.AmbientLight(0xcccccc, 1);
+scene.add(ambientLight);
+
+// const AO = new THREE.AmbientLight(0xcccccc, 1.3);
+// scene.add(AO);
 
 const point = new THREE.PointLight(0xcccccc, 0.9);
 point.position.y = 8;

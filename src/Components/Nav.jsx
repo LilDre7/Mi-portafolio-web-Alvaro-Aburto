@@ -17,25 +17,15 @@ const Nav = () => {
     setIsShowNav(!isShowNav);
   };
 
-  const guardarTeme = () => {
-    if (localStorage.getItem("theme") === "dark") {
-      document.body.classList.add("dark");
-      document.body.classList.remove("light");
-    } else {
-      document.body.classList.remove("dark");
-      document.body.classList.add("light");
-    }
-  };
-  guardarTeme();
 
   // * Effect para el el dark de la website * //
   useEffect(() => {
     if (isDark) {
       document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
+      localStorage.setItem("theme", "oscuro");
     } else {
       document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
+      localStorage.setItem("theme", "claro");
     }
   }, [isDark]);
 

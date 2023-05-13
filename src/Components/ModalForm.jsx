@@ -1,4 +1,3 @@
-import React from "react";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 import Swal from "sweetalert2";
@@ -63,9 +62,9 @@ const ModalForm = ({ isShowForm, setisShowForm }) => {
   return (
     <section
       autoFocus
-      className={`absolute transition-opacity top-0 left-0 w-full h-full bg-black/50 flex justify-center items-center
+      className={`absolute z-50 transition-opacity top-0 left-0 w-full h-full bg-black/50 flex justify-center items-center
         ${
-          isShowForm ? "opacity-100 visible " : "opacity-0 invisible"
+          isShowForm ? "opacity-100 visible overflow-hidden fixed z-50 " : "opacity-0 invisible"
         } text-black`}
     >
       <div
