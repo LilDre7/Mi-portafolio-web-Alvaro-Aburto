@@ -58,7 +58,7 @@ const AnimatedRoute = () => {
                 path="/Diseños"
                 element={
                   <>
-                    <PixelRoom/>
+                    <PixelRoom />
                   </>
                 }
               />

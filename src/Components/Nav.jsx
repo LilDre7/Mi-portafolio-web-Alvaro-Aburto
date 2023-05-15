@@ -17,7 +17,6 @@ const Nav = () => {
     setIsShowNav(!isShowNav);
   };
 
-
   // * Effect para el el dark de la website * //
   useEffect(() => {
     if (isDark) {
@@ -37,7 +36,7 @@ const Nav = () => {
   return (
     <header
       className="fixed top-0 left-0 z-50 w-full dark:border-b-4 dark:border-white/5 h-[50px] sm:mx-auto bg-[#f4ede400] border-b-4 border-white border-opacity-75 dark:text-white 
-    opacity-[10px] dark:bg-[#202023] backdrop-blur-md dark:bg-black/20"
+    opacity-[10px] backdrop-blur-md dark:bg-black/5 dark:border-opacity-[10px] transition-all duration-200 ease-in-out"
     >
       <article className="nav sm:max-w-[100%] lg:max-w-[80%] flex justify-between items-center p-2 text-black relative md:mx-auto dark:text-white opacity-[10px] backdrop-blur-md ">
         <div className="flex items-center gap-2 hover:text-blue-600 hover:scale-110 hover:translate-x-2 transition-all hover:duration-200">

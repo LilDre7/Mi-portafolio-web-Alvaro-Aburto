@@ -18,9 +18,10 @@ const Scene2 = () => {
 
   return (
     <motion.section
-      className="container3D dark:bg-[#202023] mt-20 "
+      className="container3D dark:bg-[#202023] mt-20"
       ref={mountRef}
-    ></motion.section>
+    >
+    </motion.section>
   );
 };
 

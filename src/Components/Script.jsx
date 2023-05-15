@@ -6,11 +6,11 @@ let currentMount = null;
 
 // Creando la ecena
 const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(45, 100 / 100, 0.1, 1000);
+const camera = new THREE.PerspectiveCamera(38, 100 / 100, 0.1, 1000);
 
 // ? Configurando la posición de la cámara
-camera.position.y = 9;
-camera.position.z = 9;
+camera.position.y = 10;
+camera.position.z = 10;
 camera.position.x = 9;
 
 // Camera es nuestro punto de vista
@@ -25,6 +25,12 @@ renderer.autoClearColor;
 // ************** RESIZE DEL RENDER ************** //
 const resize = () => {
   renderer.setSize(currentMount.clientWidth, currentMount.clientHeight);
+  renderer.shadowMap.enabled = true;
+  renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+  renderer.alpha = true;
+  renderer.antialias = true;
+  renderer.setPixelRatio(window.devicePixelRatio);
+  renderer.toneMapping = THREE.ACESFilmicToneMapping;
   camera.aspect = currentMount.clientWidth / currentMount.clientHeight;
   camera.updateProjectionMatrix();
 };
