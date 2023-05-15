@@ -19,7 +19,7 @@ const AnimatedRoute = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 0);
+    }, 4000);
   }, []);
 
   return (
