@@ -41,8 +41,8 @@ const Nav = () => {
       <article className="nav sm:max-w-[100%] lg:max-w-[80%] flex justify-between items-center p-2 text-black relative md:mx-auto dark:text-white opacity-[10px] backdrop-blur-md ">
         <div className="flex items-center gap-2 hover:text-blue-600 hover:scale-110 hover:translate-x-2 transition-all hover:duration-200">
           <NavLink to="/">
-            <i className="bx bxl-baidu text-lg"></i>
-            <span className="text-lg font-bold ml-1">Lil Dree</span>
+            <i className="bx bxl-baidu text-2xl rotate-[-16deg] hover:rotate-[16deg] duration-200 transition-all "></i>
+            <span className="text-xl font-bold ml-1">Lil Dree</span>
           </NavLink>
         </div>
 
