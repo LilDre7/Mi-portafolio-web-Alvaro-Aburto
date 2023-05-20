@@ -6,7 +6,7 @@ const Proyects = () => {
   return (
     <section>
       <h2 className="ml-7 text-2xl font-bold border-b-4 border-b-slate-600 max-w-[6rem] dark:text-white">
-        Works
+        Trabajos 
       </h2>
       <Atropos />
 

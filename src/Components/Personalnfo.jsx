@@ -12,22 +12,28 @@ const Personalnfo = () => {
   return (
     <motion.section
       initial={{ width: 0 }}
-      animate={{  width: "90%" }}
+      animate={{ width: "90%" }}
       exit={{ x: "100%" }}
       transition={{ duration: 2 }}
       className="m-6 relative mt-[-6rem] dark:bg-[#202023] dark:text-white"
     >
       <div className="my_info text-center bg-[#e0d8cfa5] p-3 rounded-lg md:max-w-[70%] md:mx-auto md:text-base dark:text-white">
         <p className="">
-          Hola, soy Alvaro soy desarrollador de software en Costa Rica!
+          Hola, soy Alvaro soy{" "}
+          <span className="font-semibold">desarrollador Web Full-Stack </span>
+          en Costa Rica!
         </p>
       </div>
       <article className="flex flex-col mt-3">
         <h1 className="text_name text-left text-2xl font-bold">
           Alvaro Aburto Ocampo
         </h1>
-        <p className="text-xl mt-4">
-          Digital Craftsman (Creativo / Developer / Artista){" "}
+        <p className="text-xl mt-4 max-w-[400px] ">
+          Desarrollador Web Full-Stack
+          <span className="font-semibold">
+            {" "}
+            ( Front-End / Developer / Back-End )
+          </span>
         </p>
         <div className="flex justify-center mt-4 md:flex md:flex-wrap md:justify-around md:relative md:mb-6">
           <img
@@ -37,7 +43,7 @@ const Personalnfo = () => {
           />
         </div>
         <h2 className="dark:border-gray-500  text-left text-xl font-bold mt-6 border-b-[4px] border-black max-w-[4rem] ">
-          Work
+          Trabajo
         </h2>
         <p className="mt-4 text-left md:text-lg md:text-ellipsis ">
           ¡Hola, soy Lil Dree! Un apasionado desarrollador de software con sede
@@ -54,7 +60,11 @@ const Personalnfo = () => {
           mi portafolio, ¡espero que lo disfrutes tanto como yo disfruté
           creándolo!
         </p>
-        <a download="Alvaro Aburto CV" href="/images/cvDeveloperCanvas.pdf" target="_black">
+        <a
+          download="Alvaro Aburto CV"
+          href="/images/cvDeveloperCanvas.pdf"
+          target="_black"
+        >
           <button className="flex items-center mt-6 p-3 rounded-xl text-white bg-emerald-500 max-w-[10rem] mx-auto hover:bg-emerald-950 transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-lg shadow-black/50 border-b-4 border-black hover:border-white dark:border-white ">
             Mi curriculum
             <i className="bx bx-code-alt pl-3"></i>
@@ -71,17 +81,17 @@ const Personalnfo = () => {
             Rica, San Jose.
           </p>
           <p className="mb-4">
-            <span className="text-base font-bold">2022 </span>Comence mi
-            aprendizaje como desarrollador web.
+            <span className="text-base font-bold">2021</span>
+            Comence mi aprendizaje como desarrollador web.
           </p>
           <p className="mb-4">
-            <span className="text-base font-bold">2023 </span>Desarrollador de
-            software en Costa Rica.
+            <span className="text-base font-bold">2023 </span>
+            Desarrollador web Full-Stack en Costa Rica.
           </p>
         </div>
         <div>
           <h3 className="dark:border-gray-500 text-left text-2xl font-bold mt-6 border-b-[4px] border-black max-w-[4rem] mb-5">
-            Yo{" "}
+            Yo
             <span>
               <i className="bx bx-ghost"></i>
             </span>
@@ -94,8 +104,7 @@ const Personalnfo = () => {
                 href="https://kawsone.com/password"
                 target="_blank"
               >
-                {" "}
-                arte{" "}
+                arte
               </a>
             </span>
             , la
@@ -105,8 +114,7 @@ const Personalnfo = () => {
                 href="https://youtu.be/AFtoouvmhlo"
                 target="_blank"
               >
-                {" "}
-                musica{" "}
+                musica
               </a>
             </span>
             y el surf, en tiempos libres leo sobre
@@ -116,8 +124,7 @@ const Personalnfo = () => {
                 href="https://es.wikipedia.org/wiki/S%C3%B3crates"
                 target="_blank"
               >
-                {" "}
-                filosofia{" "}
+                filosofia
               </a>
             </span>
             <span>
@@ -197,7 +204,7 @@ const Personalnfo = () => {
           </div>
           <div className="mb-3 flex justify-center items-center flex-col">
             <img
-              className="w-full object-center object-cover h-[15rem] mb-5 rounded-lg md:object-cover md:object-center md:w-[100%] sm:grid grid-cols-2 hover:shadow-lg hover:scale-90 duration-200 transition-all  hover:bg-black dark:hover:shadow-white"
+              className="w-full object-center object-cover h-[15rem] mb-5 rounded-lg md:object-cover md:object-center md:w-[100%] sm:grid grid-cols-2 hover:shadow-lg hover:scale-90 duration-200 transition-all hover:bg-black dark:hover:shadow-white"
               src="/images/setup.jpeg"
               alt=""
             />
@@ -205,7 +212,7 @@ const Personalnfo = () => {
           </div>
         </article>
         <article>
-          <ModalForm setisShowForm={setisShowForm} isShowForm={isShowForm} />
+            <ModalForm setisShowForm={setisShowForm} isShowForm={isShowForm} />
           <h2 className="text-start text-2xl font-bold border-b-4 border-b-black max-w-[10rem] dark:border-b-gray-500 dark:border-b-4">
             Contactame
           </h2>
