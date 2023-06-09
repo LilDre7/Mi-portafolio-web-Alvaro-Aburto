@@ -23,13 +23,13 @@ const AnimatedRoute = () => {
   }, []);
 
   return (
-    <section>
+    <section className="dark:bg-[#202023]">
       {loading ? (
         <div className="flex justify-center items-center h-[100vh]">
           <RingLoader color={"#000"} size={70} loading={loading} />
         </div>
       ) : (
-        <div className="App dark:bg-[#202023] ">
+        <div className="App dark:bg-[#202023]">
           <Nav />
           <AnimatePresence>
             <Routes location={location} key={location.pathname}>
