@@ -37,8 +37,8 @@ const Personalnfo = () => {
         </p>
         <div className="flex justify-center mt-4 md:flex md:flex-wrap md:justify-around md:relative md:mb-6">
           <img
-            className="w-[80px] rounded-full object-cover md:absolute md:right-[20%] md:top-[-4rem] md:w-[100px] "
-            src="/images/alvaro.png"
+            className="w-[90px] rounded-full object-cover md:absolute md:right-[20%] md:top-[-4rem] md:w-[100px] "
+            src="/images/alvaro2.png"
             alt=""
           />
         </div>
@@ -47,14 +47,17 @@ const Personalnfo = () => {
         </h2>
         <p className="mt-4 text-left md:text-lg md:text-ellipsis ">
           ¡Hola, soy Lil Dree! Un apasionado desarrollador de software con sede
-          en Costa Rica, actualmente me dedico a estudiar y mejorar. Me encanta
-          programar y en este portafolio podrás encontrar ejemplos de mis
-          habilidades y experiencia como desarrollador. Siempre estoy buscando
-          maneras de mejorar y aprender nuevas tecnologías en mi tiempo libre.
-          Me fascina estar al tanto de las últimas tendencias en desarrollo y
-          nunca dejar de aprender cosas nuevas. Aparte de mi amor por la
-          programación, también disfruto del surf y el skate. ¡Me encanta estar
-          en contacto con la naturaleza y la adrenalina de los deportes
+          en Costa Rica
+          <span className="text-[#10b981] font-bold p-1 ">
+            , actualmente soy desarrollador Web Full-Stack.
+          </span>
+          Me encanta programar y en este portafolio podrás encontrar ejemplos de
+          mis habilidades y experiencia como desarrollador. Siempre estoy
+          buscando maneras de mejorar y aprender nuevas tecnologías en mi tiempo
+          libre. Me fascina estar al tanto de las últimas tendencias en
+          desarrollo y nunca dejar de aprender cosas nuevas. Aparte de mi amor
+          por la programación, también disfruto del surf y el skate. ¡Me encanta
+          estar en contacto con la naturaleza y la adrenalina de los deportes
           extremos! Además, como todo buen desarrollador, no puedo resistirme a
           la música lofi mientras trabajo en mis proyectos. Gracias por visitar
           mi portafolio, ¡espero que lo disfrutes tanto como yo disfruté
@@ -62,7 +65,7 @@ const Personalnfo = () => {
         </p>
         <a
           download="Alvaro Aburto CV"
-          href="/images/cvDeveloperCanvas.pdf"
+          href="/images/CV-BONITO-DEV.pdf"
           target="_black"
         >
           <button className="flex items-center mt-6 p-3 rounded-xl text-white bg-emerald-500 max-w-[10rem] mx-auto hover:bg-emerald-950 transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-lg shadow-black/50 border-b-4 border-black hover:border-white dark:border-white ">
@@ -98,7 +101,7 @@ const Personalnfo = () => {
           </h3>
           <p className="mb-4 text-center md:text-lg">
             Me gusta el
-            <span className="">
+            <span className="p-1">
               <a
                 className="text-[#3e7bed] hover:text-xl transition-all hover:duration-200"
                 href="https://kawsone.com/password"
@@ -108,7 +111,7 @@ const Personalnfo = () => {
               </a>
             </span>
             , la
-            <span className="">
+            <span className="p-1">
               <a
                 className="text-[#3e7bed] hover:text-xl transition-all hover:duration-200"
                 href="https://youtu.be/AFtoouvmhlo"
@@ -118,7 +121,7 @@ const Personalnfo = () => {
               </a>
             </span>
             y el surf, en tiempos libres leo sobre
-            <span className="">
+            <span className="p-1">
               <a
                 className="text-[#3e7bed] hover:text-xl transition-all hover:duration-200"
                 href="https://es.wikipedia.org/wiki/S%C3%B3crates"
@@ -212,7 +215,7 @@ const Personalnfo = () => {
           </div>
         </article>
         <article>
-            <ModalForm setisShowForm={setisShowForm} isShowForm={isShowForm} />
+          <ModalForm setisShowForm={setisShowForm} isShowForm={isShowForm} />
           <h2 className="text-start text-2xl font-bold border-b-4 border-b-black max-w-[10rem] dark:border-b-gray-500 dark:border-b-4">
             Contactame
           </h2>

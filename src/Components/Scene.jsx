@@ -36,42 +36,47 @@ function CameraComponent() {
 
 function Scene() {
   return (
-    <motion.section
-      initial={{ width: 0 }}
-      animate={{ width: "100%" }}
-      exit={{ x: "100%" }}
-      transition={{ duration: 1 }}
-      className="container mt-10"
-    >
-      <Canvas
-        camera={{
-          position: [0, 6, 37],
-          fov: 70,
-        }}
-        gl={{
-          outputEncoding: THREE.BasicDepthPacking,
-          toneMapping: THREE.ACESFilmicToneMapping,
-          toneMappingExposure: 4.5,
-        }}
+    <>
+      <section
+        className="relative translate-y-16 bg-[#d9cdbd] w-[80%] text-[#4c4b49] p-2 rounded-md shadow-lg dark:bg-[#202023] dark:text-[#d9cdbd] sm:mx-auto sm:w-[60%] lg:left-24 lg:absolute lg:w-[25%] lg:top-20 
+      "
       >
-        <CameraComponent />
-        <Suspense fallback={null}>
-          <Laptop />
-        </Suspense>
+        <h1 className="text-center text-2xl font-bold">Mi tecnologias </h1>
+      </section>
+      <motion.section
+        initial={{ width: 0 }}
+        animate={{ width: "100%" }}
+        exit={{ x: "100%" }}
+        transition={{ duration: 1 }}
+        className="container -translate-y-7"
+      >
+        <Canvas
+          camera={{
+            position: [0, 6, 37],
+            fov: 70,
+          }}
+          gl={{
+            outputEncoding: THREE.BasicDepthPacking,
+            toneMapping: THREE.ACESFilmicToneMapping,
+            toneMappingExposure: 4.5,
+          }}
+        >
+          <CameraComponent />
+          <Suspense fallback={null}>
+            <Laptop />
+          </Suspense>
 
-        <directionalLight
-          position={[14, 14, 14]}
-          color={"#ffffff"}
-          intensity={1.3}
-        />
+          <directionalLight
+            position={[14, 14, 14]}
+            color={"#ffffff"}
+            intensity={1.3}
+          />
 
-        <ambientLight intensity={0.5} color={"#ffffff"} />
-        <OrbitControls target={[0, 4, 1]} enablePan={false} />
-
-        
-
-      </Canvas>
-    </motion.section>
+          <ambientLight intensity={0.5} color={"#ffffff"} />
+          <OrbitControls target={[0, 4, 1]} enablePan={false} />
+        </Canvas>
+      </motion.section>
+    </>
   );
 }
 

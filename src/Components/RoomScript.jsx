@@ -22,11 +22,11 @@ const aspectRatio = width / height;
 let fieldOfView;
 
 if (width <= 400) {
-  fieldOfView = 30; // Tamaño de cámara para ancho de ventana menor o igual a 400px
+  fieldOfView = 27; // Tamaño de cámara para ancho de ventana menor o igual a 400px
 } else if (width <= 800) {
   fieldOfView = 40; // Tamaño de cámara para ancho de ventana entre 401px y 800px
 } else {
-  fieldOfView = 22; // Tamaño de cámara para ancho de ventana mayor a 800px
+  fieldOfView = 21; // Tamaño de cámara para ancho de ventana mayor a 800px
 }
 
 const nearPlane = 0.1;
@@ -165,6 +165,5 @@ export const moveRoom = () => {
       duration: 2,
       ease: "power3. inOut",
     });
-    
 };
 moveRoom();

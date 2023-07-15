@@ -26,7 +26,14 @@ export default () => {
               Mis habilidades como desarrollador
             </h2>
 
-            <h3 className="text-center text-6xl font-bold p-6 text-black ">
+            <div className="relative w-full">
+              <p className="color-animating-text">
+                Haz <span className="text-5xl">scroll</span> aquí
+                <i className="bx bx-right-arrow-alt"></i>
+              </p>
+            </div>
+
+            <h3 className="text-left text-6xl font-bold p-6 text-black ">
               Front-End
             </h3>
 
