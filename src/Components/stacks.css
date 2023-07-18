@@ -10,16 +10,16 @@
 
 @keyframes colorChange {
   0% { color: red; }
-  25% { color: blue; }
-  50% { color: green; }
-  75% { color: orange; }
+  25% { color: rgb(0, 0, 0); }
+  50% { color: rgb(191, 231, 70); }
+  75% { color: rgb(11, 75, 237); }
   100% { color: purple; }
 }
 
 .color-animating-text {
   position: absolute;
   right: 7px;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
   animation: colorChange 5s infinite; /* Animación de colorChange durante 5 segundos en bucle */
 }

@@ -9,6 +9,7 @@ import Scene from "../Components/Scene";
 import ErrorNotFound from "../Components/ErrorNotFound";
 import { AnimatePresence } from "framer-motion";
 import PixelRoom from "../Components/PixelRoom";
+import BotonFlotante from "../Components/BotonFlotante";
 
 const AnimatedRoute = () => {
   const location = useLocation();
@@ -40,6 +41,7 @@ const AnimatedRoute = () => {
                   <>
                     <Scene2 />
                     <Home />
+                    <BotonFlotante />
                   </>
                 }
               />
@@ -50,6 +52,7 @@ const AnimatedRoute = () => {
                   <>
                     <Scene2 />
                     <Proyects />
+                    <BotonFlotante />
                   </>
                 }
               />
@@ -58,7 +61,8 @@ const AnimatedRoute = () => {
                 path="/Diseños"
                 element={
                   <>
-                    <PixelRoom/>
+                    <PixelRoom />
+                    <BotonFlotante />
                   </>
                 }
               />
@@ -68,6 +72,7 @@ const AnimatedRoute = () => {
                 element={
                   <>
                     <Scene />
+                    <BotonFlotante />
                   </>
                 }
               />

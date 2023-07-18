@@ -22,7 +22,7 @@ export default () => {
               "
               ></i>
             </header>
-            <h2 className="text-center text-black text-5xl font-bold p-4">
+            <h2 className="text-center text-black text-[3.2rem] font-bold p-5">
               Mis habilidades como desarrollador
             </h2>
 
@@ -40,70 +40,70 @@ export default () => {
             <section className=" grid grid-cols-2 gap-4 mt-8 ">
               <div>
                 <img
-                  className=" imgtec mx-auto w-[9rem] object-contain h-[10rem]  "
+                  className=" imgtec mx-auto w-[11rem] object-contain h-[10rem]  "
                   src="/images/React-Dark.svg"
                   alt=""
                 />
               </div>
               <div>
                 <img
-                  className=" imgtec mx-auto w-[9rem] object-contain h-[10rem]  "
+                  className=" imgtec mx-auto w-[11rem] object-contain h-[10rem]  "
                   src="/images/NextJS-Dark.svg"
                   alt=""
                 />
               </div>
               <div>
                 <img
-                  className=" imgtec mx-auto w-[9rem] object-contain h-[10rem]  "
+                  className=" imgtec mx-auto w-[11rem] object-contain h-[10rem]  "
                   src="/images/Redux.svg"
                   alt=""
                 />
               </div>
               <div>
                 <img
-                  className=" imgtec mx-auto w-[9rem] object-contain h-[10rem]  "
+                  className=" imgtec mx-auto w-[11rem] object-contain h-[10rem]  "
                   src="/images/HTML.svg"
                   alt=""
                 />
               </div>
               <div>
                 <img
-                  className=" imgtec mx-auto w-[9rem] object-contain h-[10rem]  "
+                  className=" imgtec mx-auto w-[11rem] object-contain h-[10rem]  "
                   src="/images/CSS.svg"
                   alt=""
                 />
               </div>
               <div>
                 <img
-                  className=" imgtec mx-auto w-[9rem] object-contain h-[10rem]  "
+                  className=" imgtec mx-auto w-[11rem] object-contain h-[10rem]  "
                   src="/images/JavaScript.svg"
                   alt=""
                 />
               </div>
               <div>
                 <img
-                  className=" imgtec mx-auto w-[9rem] object-contain h-[10rem]  "
+                  className=" imgtec mx-auto w-[11rem] object-contain h-[10rem]  "
                   src="/images/TailwindCSS-Dark.svg"
                   alt=""
                 />
               </div>
               <div>
                 <img
-                  className=" imgtec mx-auto w-[9rem] object-contain h-[10rem]  "
+                  className=" imgtec mx-auto w-[11rem] object-contain h-[10rem]  "
                   src="/images/Sass.svg"
                   alt=""
                 />
               </div>
               <div>
                 <img
-                  className=" imgtec mx-auto w-[9rem] object-contain h-[10rem]  "
+                  className=" imgtec mx-auto w-[11rem] object-contain h-[10rem]  "
                   src="/images/Bootstrap.svg"
                   alt=""
                 />
               </div>
               <div>
                 <img
-                  className=" imgtec mx-auto w-[9rem] object-contain h-[10rem]  "
+                  className=" imgtec mx-auto w-[11rem] object-contain h-[10rem]  "
                   src="/images/MaterialUI-Light.svg"
                   alt=""
                 />
@@ -117,14 +117,14 @@ export default () => {
             <section className=" grid grid-cols-2 gap-4 mt-8 ">
               <div>
                 <img
-                  className=" imgtec mx-auto w-[9rem] object-contain h-[10rem]  "
+                  className=" imgtec mx-auto w-[11rem] object-contain h-[10rem]  "
                   src="/images/NodeJS-Dark.svg"
                   alt=""
                 />
               </div>
               <div>
                 <img
-                  className=" imgtec mx-auto w-[9rem] object-contain h-[10rem]  "
+                  className=" imgtec mx-auto w-[11rem] object-contain h-[10rem]  "
                   src="/images/ExpressJS-Dark.svg"
                   alt=""
                 />
@@ -132,14 +132,14 @@ export default () => {
 
               <div>
                 <img
-                  className=" imgtec mx-auto w-[9rem] object-contain h-[10rem]  "
+                  className=" imgtec mx-auto w-[11rem] object-contain h-[10rem]  "
                   src="/images/Docker.svg"
                   alt=""
                 />
               </div>
               <div>
                 <img
-                  className=" imgtec mx-auto w-[9rem] object-contain h-[10rem]  "
+                  className=" imgtec mx-auto w-[11rem] object-contain h-[10rem]  "
                   src="/images/PostgreSQL-Dark.svg"
                   alt=""
                 />
@@ -153,7 +153,7 @@ export default () => {
             <section className=" grid grid-cols-2 gap-4 mt-8">
               <div>
                 <img
-                  className=" imgtec mx-auto w-[9rem] object-contain h-[10rem]  "
+                  className=" imgtec mx-auto w-[11rem] object-contain h-[10rem]  "
                   src="/images/VSCode-Dark.svg"
                   alt=""
                 />
@@ -161,7 +161,7 @@ export default () => {
 
               <div>
                 <img
-                  className=" imgtec mx-auto w-[9rem] object-contain h-[10rem]  "
+                  className=" imgtec mx-auto w-[11rem] object-contain h-[10rem]  "
                   src="/images/Vite-Dark.svg"
                   alt=""
                 />
@@ -169,7 +169,7 @@ export default () => {
 
               <div>
                 <img
-                  className=" imgtec mx-auto w-[9rem] object-contain h-[10rem]  "
+                  className=" imgtec mx-auto w-[11rem] object-contain h-[10rem]  "
                   src="/images/Firebase-Dark.svg"
                   alt=""
                 />
@@ -177,7 +177,7 @@ export default () => {
 
               <div>
                 <img
-                  className=" imgtec mx-auto w-[9rem] object-contain h-[10rem]  "
+                  className=" imgtec mx-auto w-[11rem] object-contain h-[10rem]  "
                   src="/images/Discord.svg"
                   alt=""
                 />
@@ -185,7 +185,7 @@ export default () => {
 
               <div>
                 <img
-                  className=" imgtec mx-auto w-[9rem] object-contain h-[10rem]  "
+                  className=" imgtec mx-auto w-[11rem] object-contain h-[10rem]  "
                   src="/images/StackOverflow-Dark.svg"
                   alt=""
                 />
@@ -193,7 +193,7 @@ export default () => {
 
               <div>
                 <img
-                  className=" imgtec mx-auto w-[9rem] object-contain h-[10rem]  "
+                  className=" imgtec mx-auto w-[11rem] object-contain h-[10rem]  "
                   src="/images/Netlify-Dark.svg"
                   alt=""
                 />
@@ -201,7 +201,7 @@ export default () => {
 
               <div>
                 <img
-                  className=" imgtec mx-auto w-[9rem] object-contain h-[10rem]  "
+                  className=" imgtec mx-auto w-[11rem] object-contain h-[10rem]  "
                   src="/images/termianal.png"
                   alt=""
                 />
@@ -209,7 +209,7 @@ export default () => {
 
               <div>
                 <img
-                  className=" imgtec mx-auto w-[9rem] object-contain h-[10rem]  "
+                  className=" imgtec mx-auto w-[11rem] object-contain h-[10rem]  "
                   src="/images/git.png"
                   alt=""
                 />
@@ -217,7 +217,7 @@ export default () => {
 
               <div className="mb-10">
                 <img
-                  className=" imgtec mx-auto w-[9rem] object-contain h-[10rem]  "
+                  className=" imgtec mx-auto w-[11rem] object-contain h-[10rem]  "
                   src="/images/notion.png"
                   alt=""
                 />
@@ -225,7 +225,7 @@ export default () => {
 
               <div className="mb-10">
                 <img
-                  className=" imgtec mx-auto w-[9rem] object-contain h-[10rem]  "
+                  className=" imgtec mx-auto w-[11rem] object-contain h-[10rem]  "
                   src="/images/figma.png"
                   alt=""
                 />

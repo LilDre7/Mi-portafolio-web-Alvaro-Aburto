@@ -19,8 +19,8 @@ const Personalnfo = () => {
     >
       <div className="my_info text-center bg-[#e0d8cfa5] p-3 rounded-lg md:max-w-[70%] md:mx-auto md:text-base dark:text-white">
         <p className="">
-          Hola, soy Alvaro soy{" "}
-          <span className="font-semibold">desarrollador Web Full-Stack </span>
+          Hola, soy Alvaro soy
+          <span className="font-semibold"> desarrollador Web Full-Stack </span>
           en Costa Rica!
         </p>
       </div>
@@ -31,13 +31,12 @@ const Personalnfo = () => {
         <p className="text-xl mt-4 max-w-[400px] ">
           Desarrollador Web Full-Stack
           <span className="font-semibold">
-            {" "}
             ( Front-End / Developer / Back-End )
           </span>
         </p>
         <div className="flex justify-center mt-4 md:flex md:flex-wrap md:justify-around md:relative md:mb-6">
           <img
-            className="w-[90px] rounded-full object-cover md:absolute md:right-[20%] md:top-[-4rem] md:w-[100px] "
+            className="w-[90px] rounded-full object-cover md:absolute md:right-[20%] md:top-[-7rem] md:w-[130px] "
             src="/images/alvaro2.png"
             alt=""
           />
@@ -46,8 +45,14 @@ const Personalnfo = () => {
           Trabajo
         </h2>
         <p className="mt-4 text-left md:text-lg md:text-ellipsis ">
-          ¡Hola, soy Lil Dree! Un apasionado desarrollador de software con sede
-          en Costa Rica
+          ¡Hola, soy Alvaro Aburto o me encuentras en mis redes sociales como
+          <span className="text-[#1018b9] font-bold p-1 ">Lil Dree</span> este
+          apodo viene a mi gran gusto por el musica, skatebording y al arte
+          digital ya que al tener estas habilidades queria que tener algo
+          distintivo en como las personas me conocieran y asi con una gran
+          busqueda para tener un exelente apodo nace
+          <span className="text-[#1018b9] font-bold p-1 ">Lil Dree!</span>
+          Un apasionado desarrollador de software con sede en Costa Rica
           <span className="text-[#10b981] font-bold p-1 ">
             , actualmente soy desarrollador Web Full-Stack.
           </span>
@@ -65,7 +70,7 @@ const Personalnfo = () => {
         </p>
         <a
           download="Alvaro Aburto CV"
-          href="/images/CV-BONITO-DEV.pdf"
+          href="/images/micvAlvaroAburtoO.pdf"
           target="_black"
         >
           <button className="flex items-center mt-6 p-3 rounded-xl text-white bg-emerald-500 max-w-[10rem] mx-auto hover:bg-emerald-950 transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-lg shadow-black/50 border-b-4 border-black hover:border-white dark:border-white ">
@@ -197,8 +202,8 @@ const Personalnfo = () => {
         <article className="md:flex md:flex-row md:justify-center">
           <div className="mb-3 flex justify-center items-center flex-col">
             <img
-              className="w-full object-right-top object-cover h-[15rem] mb-5  rounded-lg md:object-cover md:object-top md:w-[80%] sm:grid grid-cols-2 hover:shadow-lg hover:scale-90 duration-200 transition-all hover:bg-black dark:hover:shadow-white"
-              src="/images/logo1.jpg"
+              className="w-full object-right-top object-cover h-[15rem] mb-5  rounded-lg md:object-cover md:object-top md:w-[80%] sm:grid grid-cols-2 hover:shadow-lg hover:scale-90 duration-200 transition-all  dark:hover:shadow-white"
+              src="/images/midiseño.png"
               alt=""
             />
             <code className="text-center text-base">
@@ -208,7 +213,7 @@ const Personalnfo = () => {
           <div className="mb-3 flex justify-center items-center flex-col">
             <img
               className="w-full object-center object-cover h-[15rem] mb-5 rounded-lg md:object-cover md:object-center md:w-[100%] sm:grid grid-cols-2 hover:shadow-lg hover:scale-90 duration-200 transition-all hover:bg-black dark:hover:shadow-white"
-              src="/images/setup.jpeg"
+              src="/images/miSet-up.gif"
               alt=""
             />
             <code className="text-center text-base">Mi espacio de trabajo</code>
