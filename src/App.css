@@ -210,3 +210,7 @@ body::-webkit-scrollbar-thumb {
   background: -webkit-linear-gradient(to right, #c5796d, #dbe6f6);
   background: linear-gradient(to right, #c5796d, #dbe6f6);
 }
+
+h1:hover { 
+  content: "Home";
+}
