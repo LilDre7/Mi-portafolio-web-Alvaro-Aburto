@@ -1,0 +1,30 @@
+# Cambios en personal lo estamos haciendo mas minimalista mas bonito.
+
+Primeros cambios de Personalnfo: 
+Se cambio el tamaño total de wigth.
+
+Y eliminamos esto parte del script: 
+<article className="md:flex md:flex-row md:justify-center">
+          <div className="mb-3 flex justify-center items-center flex-col">
+            <img
+              className="w-full object-right-top object-cover h-[15rem] mb-5 rounded-lg md:w-[80%] sm:grid grid-cols-2 hover:shadow-lg hover:scale-90 duration-200 transition-all dark:hover:shadow-white"
+              src="/images/midiseño.png"
+              alt=""
+            />
+            <code className="text-center text-base">
+              Algunos de los diseños que he creado
+            </code>
+          </div>
+          <div className="mb-3 flex justify-center items-center flex-col">
+            <img
+              className="w-full object-center object-cover h-[15rem] mb-5 rounded-lg md:w-[100%] sm:grid grid-cols-2 hover:shadow-lg hover:scale-90 duration-200 transition-all hover:bg-black dark:hover:shadow-white"
+              src="/images/miSet-up.gif"
+              alt=""
+            />
+            <code className="text-center text-base">Mi espacio de trabajo</code>
+          </div>
+</article>
+
+Mas modificaciones importantes: 
+
+Se cambio el texto de la parte principal.

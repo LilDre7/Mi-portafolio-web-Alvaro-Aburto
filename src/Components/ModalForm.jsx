@@ -63,17 +63,17 @@ const ModalForm = ({ isShowForm, setisShowForm }) => {
 
   if (isShowForm) {
     body.style.overflow = "hidden";
-    body.style.backgroundColor= "#000000ee";
+    body.style.backgroundColor = "#000000ee";
     body.style.transition = "all 0.5s ease-in-out";
   } else {
     body.style.overflow = "auto";
-    body.style.backgroundColor= "#f0e7db"
+    body.style.backgroundColor = "#f0e7db";
   }
 
   return (
     <section
       autoFocus
-      className={`fixed z-50 transition-opacity top-0 left-0 w-full h-full bg-["#000000ee"] flex justify-center items-center
+      className={`fixed z-50 transition-opacity top-0 left-0 w-full h-full bg-["#319795"] flex justify-center items-center
         ${
           isShowForm
             ? "opacity-100 visible overflow-hidden absolute z-50 translate-y-36 sm:translate-y-0 "

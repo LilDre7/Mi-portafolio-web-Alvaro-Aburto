@@ -35,10 +35,10 @@ const Nav = () => {
 
   return (
     <header
-      className="fixed top-0 left-0 z-50 w-full dark:border-b-4 dark:border-white/5 h-[50px] sm:mx-auto bg-[#f4ede400] border-b-4 border-white border-opacity-75 dark:text-white 
-    opacity-[10px] backdrop-blur-md dark:bg-black/5 dark:border-opacity-[10px] transition-all duration-200 ease-in-out"
+      className="fixed top-0 left-0 z-50 w-full dark:border-white/5 h-[50px] sm:mx-auto dark:text-white
+  opacity-[10px] backdrop-blur-md transition-all duration-200 ease-in-out"
     >
-      <article className="nav sm:max-w-[100%] lg:max-w-[80%] flex justify-between items-center p-2 text-black relative md:mx-auto dark:text-white opacity-[10px] backdrop-blur-md ">
+      <article className="nav sm:max-w-[100%] bg-white lg:max-w-[50%] flex justify-between items-center p-2 text-black relative md:mx-auto dark:text-white opacity-[10px] backdrop-blur-md md:rounded-md md:mt-4 dark:bg-[#131314] ">
         <div className="flex items-center gap-2 hover:text-blue-600 hover:scale-110 hover:translate-x-2 transition-all hover:duration-200">
           <NavLink to="/">
             <i className="bx bxl-baidu text-2xl rotate-[-16deg] hover:rotate-[16deg] duration-200 transition-all "></i>
@@ -82,7 +82,7 @@ const Nav = () => {
             isShowNav
               ? "left-0 z-50 min-h-screen dark:text-white"
               : "-left-full"
-          } duration-300 flex flex-col gap-5 font-[600] text-black bg-[#f4ede4] min-h-screen w-full justify-center items-center text-3xl md:static md:flex md:flex-row md:gap-10 md:w-auto md:min-h-0 md:bg-transparent md:dark:md:bg-transparent dark:bg-[#0b0b0bf8] md:jus md:text-base md:items-center md:text-black md:p-0 dark:text-white}`}
+          } duration-300 flex flex-col gap-5 font-[600] bg-[#f5f0e8] min-h-screen w-full justify-center items-center text-3xl md:static md:flex md:flex-row md:gap-10 md:w-auto md:min-h-0 md:bg-transparent md:text-base md:items-center md:text-white md:p-0}`}
         >
           <NavLink
             to="/"
@@ -90,7 +90,7 @@ const Nav = () => {
             className={({ isActive }) =>
               isActive
                 ? "text-white bg-black/40 hover:border-b-4 border-black hover:bg-blue-300 rounded-md tracking-widest p-1 duration-200 transition-all dark:border-white sm:hidden"
-                : "hover:border-b-4 border-black hover:bg-blue-300 rounded-md tracking-widest p-1 duration-200 transition-all text-black dark:border-white dark:text-white sm:hidden"
+                : "hover:border-b-4 border-black hover:bg-blue-300 rounded-md tracking-widest p-1 duration-200 transition-all text-black dark:border-white sm:hidden"
             }
           >
             Home
@@ -130,11 +130,11 @@ const Nav = () => {
           </NavLink>
 
           {/* <a
-            href="#"
-            className="hover:border-b-4 border-black hover:bg-blue-300 rounded-md tracking-widest p-1 duration-200 transition-all dark:text-white text-black dark:border-white"
-          >
-            View Source
-          </a> */}
+          href="#"
+          className="hover:border-b-4 border-black hover:bg-blue-300 rounded-md tracking-widest p-1 duration-200 transition-all dark:text-white text-black dark:border-white"
+        >
+          View Source
+        </a> */}
         </nav>
       </article>
     </header>
