@@ -2,6 +2,7 @@ export default App;
 import React from "react";
 import Atropos from "atropos/react";
 import { motion, useScroll, useTransform } from "framer-motion";
+import "@fontsource-variable/manrope";
 
 const projects = [
   {
@@ -40,13 +41,47 @@ const projects = [
     stack: ["HTML", "REACTJS", "API", "CSS"],
   },
   {
-    title: "Conviértete en un maestro pokemon con esta PokeAPi",
+    title: "Conviértete en un maestro pokemon",
     githubLink: "https://github.com/LilDre7/Proyecto-Pokeapi.git",
     liveLink: "https://lilpokeapi.netlify.app/",
     imageSrc: "/newImagesProyect/pokemon.jpg",
     description:
-      "Proyecto creado con React y React/toolkit un proyecto donde encontraras todos tus pokemones favoritas,que esperas para probarlo.",
-    stack: ["HTML", "REACTJS", "API", "CSS"],
+      "Proyecto donde encontraras todos tus pokemones favoritas,que esperas para probarlo.",
+    stack: [
+      "HTML",
+      "REACTJS",
+      "API",
+      "CSS",
+      "REACT/TOOKITS",
+      "REDUX",
+      "TAILWIND",
+    ],
+  },
+  {
+    title: "Ecommerce lil dree",
+    githubLink: "https://github.com/LilDre7/ProyectoReact-Ecommerce.git",
+    liveLink: "https://lilpokeapi.netlify.app/",
+    imageSrc: "/newImagesProyect/Captura de pantalla 2023-09-12 164935.png",
+    description:
+      "Un ecommerce creado aproximadamente en 48h con login, compras y carrito, aqui demuestro mi grandes en parte del Front-End",
+    stack: [
+      "HTML",
+      "REACTJS",
+      "API",
+      "CSS",
+      "REACT/TOOKITS",
+      "REDUX",
+      "TAILWIND",
+    ],
+  },
+  {
+    title: "Tic-Tac-Toe Game with React",
+    githubLink: "https://github.com/LilDre7/Tic-tac-tok.git",
+    liveLink: "https://lil-cat-game.netlify.app/",
+    imageSrc: "/newImagesProyect/cat.png",
+    description:
+      "Este es un juego simple de Tic-Tac-Toe implementado con React, donde dos jugadores pueden competir entre sí para ganar.",
+    stack: ["HTML", "REACTJS", "CSS", "REDUX", "TAILWIND"],
   },
 ];
 
@@ -70,19 +105,24 @@ function ProjectCard({ project }) {
       className=" mb-3 sm:mb-1 last:mb-0"
     >
       <Atropos
-        shadow={false}
-        duration={800}
+        activeOffset={40}
+        duration={300}
+        shadowScale={1}
+        highlight={true}
         onEnter={() => console.log("Enter")}
         onLeave={() => console.log("Leave")}
-        onRotate={(y, x) => console.log("Rotate", y)}
+        onRotate={(x, y) => console.log("Rotate", x, y)}
       >
-        <section className="bg-gray-100 w-[23rem] ml-6 md:w-[34rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[17rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+        <section className="bg-gray-100 w-[23rem] ml-6 sm:max-h-[19rem] md:w-[34rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[17rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
           <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[60%] flex flex-col h-full sm:group-even:ml-[18rem]">
             <h2 className="text-xl font-semibold">{project.title}</h2>
-            <p className="mt-2 text-sm leading-relaxed text-gray-700 dark:text-white/70">
+            <p
+              style={{ fontFamily: "Manrope, sans-serif", fontWeight: "300" }}
+              className="mt-2 text-sm leading-relaxed text-gray-700 dark:text-white/70 text-justify"
+            >
               {project.description}
             </p>
-            <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
+            <ul className="flex flex-wrap mt-5 gap-2 sm:mt-auto">
               {project.stack.map((tech, index) => (
                 <li
                   key={index}
@@ -92,11 +132,18 @@ function ProjectCard({ project }) {
                 </li>
               ))}
             </ul>
+            <a
+              className="z-10 sm:absolute top-0 sm:-translate-x-8 "
+              href={project.githubLink}
+              target="_blank"
+            >
+              <i className="bx bxl-github text-2xl translate-y-4 "></i>
+            </a>
           </div>
-          <div className="absolute opacity-30 sm:opacity-90 rounded-md top-8 -right-40 w-[24.25rem] rounded-t-lg shadow-2xl">
+          <div className="">
             <a href={project.liveLink} target="_blank">
               <img
-                className="object-cover w-full h-full rounded-md"
+                className="absolute sm:h-[13rem] object-cover opacity-30 sm:opacity-90 rounded-md top-8 -right-40 w-[24.25rem] rounded-t-lg shadow-2xl"
                 src={project.imageSrc}
                 alt=""
               />

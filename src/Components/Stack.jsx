@@ -7,16 +7,34 @@ const Stack = () => {
     frontEnd: [
       { src: "/images/React-Dark.svg", alt: "React" },
       { src: "/images/NextJS-Dark.svg", alt: "Next.js" },
+      { src: "/images/CSS.svg", alt: "React" },
+      { src: "/images/Bootstrap.svg", alt: "Next.js" },
+      { src: "/images/HTML.svg", alt: "React" },
+      { src: "/images/JavaScript.svg", alt: "Next.js" },
+      { src: "/images/Sass.svg", alt: "React" },
+      { src: "/images/TailwindCSS-Dark.svg", alt: "Next.js" },
+      { src: "/images/MaterialUI-Light.svg", alt: "Next.js" },
+      { src: "/images/Redux.svg", alt: "Next.js" },
       // Agrega más habilidades de Front-End aquí
     ],
     backEnd: [
       { src: "/images/NodeJS-Dark.svg", alt: "Node.js" },
       { src: "/images/Docker.svg", alt: "Docker.js" },
+      { src: "/images/Firebase-Dark.svg", alt: "Node.js" },
+      { src: "/images/PostgreSQL-Dark.svg", alt: "Docker.js" },
       // Agrega más habilidades de Back-End aquí
     ],
     utilities: [
       { src: "/images/VSCode-Dark.svg", alt: "VS Code" },
       { src: "/images/Vite-Dark.svg", alt: "Vite" },
+      { src: "/images/Discord.svg", alt: "Node.js" },
+      { src: "/images/figma.png", alt: "Docker.js" },
+      { src: "/images/Github-Dark.svg", alt: "Node.js" },
+      { src: "/images/Netlify-Dark.svg", alt: "Docker.js" },
+      { src: "/images/notion.png", alt: "Docker.js" },
+      { src: "/images/StackOverflow-Dark.svg", alt: "Docker.js" },
+      { src: "/images/VSCode-Dark.svg", alt: "Docker.js" },
+      { src: "/images/windows.png", alt: "Docker.js" },
       // Agrega más utilidades aquí
     ],
   };

@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
+    "@fontsource-variable/manrope": "^5.0.12",
+    "@fontsource/open-sans": "^5.0.12",
     "@react-three/drei": "^9.66.3",
     "@react-three/fiber": "^8.13.0",
     "@types/three": "^0.152.0",
