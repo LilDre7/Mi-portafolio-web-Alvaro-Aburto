@@ -4,9 +4,9 @@ import Atropos from "./Atropos";
 
 const Proyects = () => {
   return (
-    <section>
+    <section className="mt-[-5rem]">
       <h2 className="ml-7 text-2xl font-bold border-b-4 border-b-slate-600 max-w-[6rem] dark:text-white">
-        Trabajos 
+        Trabajos
       </h2>
       <Atropos />
 
