@@ -1,3 +1,7 @@
+export default App;
+import React from "react";
+import Atropos from "atropos/react";
+
 const projects = [
   {
     title: "Proyecto de Rick and morty",
@@ -96,7 +100,3 @@ function App() {
     </article>
   );
 }
-
-export default App;
-import React from "react";
-import Atropos from "atropos/react";
