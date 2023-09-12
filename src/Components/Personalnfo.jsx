@@ -87,7 +87,7 @@ const Personalnfo = () => {
             la <span className="text-[#3e7bed] font-bold">música</span> y el
             surf; en tiempos libres leo sobre
             <a
-              className="text-[#3e7bed] hover:text-xl transition-all hover:duration-200"
+              className="text-[#3e7bed] hover:text-xl transition-all hover:duration-200 pl-1 font-bold"
               href="https://es.wikipedia.org/wiki/S%C3%B3crates"
               target="_blank"
             >
