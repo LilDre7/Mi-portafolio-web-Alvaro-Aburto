@@ -109,9 +109,11 @@ function ProjectCard({ project }) {
         duration={300}
         shadowScale={1}
         highlight={true}
+        rotateTouch={false}
         onEnter={() => console.log("Enter")}
         onLeave={() => console.log("Leave")}
-        onRotate={(x, y) => console.log("Rotate", x, y)}
+        onScale={(x, y) => console.log("Scale", x, y)}
+        onRotate={(y, x) => console.log("Rotate", y)}
       >
         <section className="bg-gray-100 w-[23rem] ml-6 sm:max-h-[19rem] md:w-[34rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[17rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
           <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[60%] flex flex-col h-full sm:group-even:ml-[18rem]">
