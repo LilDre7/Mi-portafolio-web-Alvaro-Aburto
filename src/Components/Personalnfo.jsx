@@ -97,7 +97,7 @@ const Personalnfo = () => {
             aprender y cada línea de código te acerca más a tu objetivo."
           </p>
         </div>
-        <article className="flex justify-between md:flex md:flex-row md:justify-center">
+        <article className="flex justify-evenly md:flex md:flex-row md:justify-center">
           <div className="mb-3 flex justify-center items-center flex-col">
             <img
               className="w-full object-contain h-[9rem] md:h-[12rem] mb-5 rounded-lg md:w-[90%] sm:grid grid-cols-2 hover:shadow-lg md:hover:scale-90 duration-200 transition-all dark:hover:shadow-white"
@@ -117,7 +117,7 @@ const Personalnfo = () => {
           <h3 className="text-xl font-bold mt-6 border-b-[4px] border-black max-w-[8rem]">
             En la web <i className="bx bx-mouse text-xl pl-2"></i>
           </h3>
-          <ul className="flex flex-col mt-3 md:flex md:flex-col md:justify-around md:gap-1 md:mt-3 mb-3 ">
+          <ul className="flex flex-col mt-3 md:flex md:flex-col md:justify-evenly md:gap-1 md:mt-3 mb-3">
             <li className="flex items-center md:text-lg">
               <a
                 href="https://www.instagram.com/thelildree/"
