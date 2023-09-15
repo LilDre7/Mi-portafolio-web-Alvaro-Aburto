@@ -73,8 +73,8 @@ const ModalForm = ({ isShowForm, setisShowForm }) => {
   return (
     <section
       autoFocus
-      className={`fixed top-0 left-0 right-0 bottom-0 flex justify-center items-center
-      ${isShowForm ? "" : "opacity-0 invisible"} bg-rose-300 bgtext-black`}
+      className={`fixed top-0 left-0 right-0 bottom-0 flex justify-center items-center z-10 bg-[#000000e6] bg-opacity-50
+      ${isShowForm ? "" : "opacity-0 invisible"}`}
     >
       <div autoFocus className="formulario w-[300px] sm:w-[900px] rounded-lg">
         <form
@@ -83,10 +83,10 @@ const ModalForm = ({ isShowForm, setisShowForm }) => {
           className="flex flex-col gap-4 p-2 text-black text-center z-50 relative"
         >
           <h1 className="text-center text-2xl font-bold pt-2 flex flex-col mx-auto w-full justify-center items-center ">
-            <span className="border-b-slate-700 border-b-2">Hola!</span>
-            <span className="mx-auto text-white font-bold text-2xl ">
+            <span className="">¡Hi soy Lil dree!</span>
+            <span className="mx-auto text-black font-bold text-2xl ">
               <span>
-                <i className="bx bxl-mailchimp text-3xl text-black   translate-y-1 -translate-x-3 "></i>
+                <i className="bx bxl-mailchimp text-3xl text-black translate-y-1 -translate-x-3 "></i>
               </span>
               Contactame
             </span>
@@ -99,7 +99,7 @@ const ModalForm = ({ isShowForm, setisShowForm }) => {
             className="border-2 border-black rounded-md outline-none p-1"
             type="text"
             name="user_name"
-            placeholder="Escribe tu nombre ⚗️"
+            placeholder="Escribe tu nombre 👋🏾"
           />
           <label className="bg-black text-white mx-auto w-[80%] rounded-md p-[0.2rem] border-b-4 border-green-500 ">
             Email
@@ -108,14 +108,14 @@ const ModalForm = ({ isShowForm, setisShowForm }) => {
             className="border-2 border-black rounded-md outline-none p-1"
             type="email"
             name="user_email"
-            placeholder="Escribe tu correo ⚗️"
+            placeholder="Escribe tu correo 📨"
           />
           <label className="bg-black text-white mx-auto w-[80%]  rounded-md p-[0.2rem] border-b-4 border-green-500 ">
             Message
           </label>
           <textarea
-            placeholder="Hola, dime en que te puedo ayudar!"
-            className="border-2 border-black rounded-md text-sm placeholder:text-center p-1 outline-none "
+            placeholder="¡Hi, dime en que te puedo ayudar! 🧑🏾‍💻 "
+            className="border-2 border-black rounded-md text-sm placeholder:text-center p-2 outline-none "
             name="message"
           />
 

@@ -169,9 +169,10 @@ const Personalnfo = () => {
           </ul>
         </div>
 
+        <ModalForm setisShowForm={setisShowForm} isShowForm={isShowForm} />
+
         <article>
           {/* Agrega el componente del formulario aquí */}
-          <ModalForm setisShowForm={setisShowForm} isShowForm={isShowForm} />
           <h2 className="text-2xl font-bold border-b-4 border-b-black max-w-[10rem] dark:border-b-gray-500 dark:border-b-4">
             Contáctame
           </h2>
@@ -181,10 +182,10 @@ const Personalnfo = () => {
             contactarme. Estoy disponible para responder cualquier pregunta o
             consulta que tengas. ¡Hablemos pronto!
           </p>
-          <div className="text-center p-3 mt-5">
+          <div className="text-center p-3 mt-4 z-0 ">
             <button
               onClick={handleClickModal}
-              className="css-button-retro--black w-[80%] md:w-[50%] text-white"
+              className="css-button-retro--black w-[300px] text-white"
             >
               <span className="">
                 <i className="bx bxl-gmail pr-3"></i> Contáctame
