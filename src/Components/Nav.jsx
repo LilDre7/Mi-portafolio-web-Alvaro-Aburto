@@ -35,8 +35,8 @@ const Nav = () => {
 
   return (
     <header
-      className="fixed top-0 left-0 z-50 w-full dark:border-white/5 h-[50px] sm:mx-auto dark:text-white
-  opacity-[10px] backdrop-blur-md transition-all duration-200 ease-in-out"
+      className="fixed top-0 left-0 z-10 w-full dark:border-white/5 h-[50px] sm:mx-auto dark:text-white
+    opacity-[10px] backdrop-blur-md transition-all duration-200 ease-in-out"
     >
       <article className="nav sm:max-w-[100%] bg-white lg:max-w-[50%] flex justify-between items-center p-2 text-black relative md:mx-auto dark:text-white opacity-[10px] backdrop-blur-md md:rounded-md md:mt-4 dark:bg-[#131314] ">
         <div className="flex items-center gap-2 hover:text-blue-600 hover:scale-110 hover:translate-x-2 transition-all hover:duration-200">
