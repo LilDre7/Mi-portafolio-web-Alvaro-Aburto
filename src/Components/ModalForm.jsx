@@ -73,21 +73,14 @@ const ModalForm = ({ isShowForm, setisShowForm }) => {
   return (
     <section
       autoFocus
-      className={`fixed z-50 transition-opacity top-0 left-0 w-full h-full bg-["#319795"] flex justify-center items-center
-        ${
-          isShowForm
-            ? "opacity-100 visible overflow-hidden absolute z-50 translate-y-36 sm:translate-y-0 "
-            : "opacity-0 invisible"
-        } text-black`}
+      className={`fixed top-0 left-0 right-0 bottom-0 flex justify-center items-center
+      ${isShowForm ? "" : "opacity-0 invisible"} bg-rose-300 bgtext-black`}
     >
-      <div
-        autoFocus
-        className="formulario w-[300px] p-4 rounded-md  grid gap-4 translate-y-[50rem] sm:translate-y-[40rem] lg:translate-y-[30rem] z-50 "
-      >
+      <div autoFocus className="formulario w-[300px] sm:w-[900px] rounded-lg">
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="flex flex-col gap-4 p-2 text-black text-center z-50"
+          className="flex flex-col gap-4 p-2 text-black text-center z-50 relative"
         >
           <h1 className="text-center text-2xl font-bold pt-2 flex flex-col mx-auto w-full justify-center items-center ">
             <span className="border-b-slate-700 border-b-2">Hola!</span>
@@ -133,10 +126,10 @@ const ModalForm = ({ isShowForm, setisShowForm }) => {
             type="submit"
             value="Enviar"
           />
+          <button onClick={handleClose}>
+            <i className="bx bx-x text-4xl absolute top-0 right-0 text-red-500 translate-y-1 -translate-x-3 hover:text-red-500 transition-all duration-300 ease-in-out hover:scale-110 cursor-pointer"></i>
+          </button>
         </form>
-        <button onClick={handleClose}>
-          <i className="bx bx-x text-2xl absolute top-0 right-0 rounded-md p-1 cursor-pointer hover:text-red-600 hover:scale-150"></i>
-        </button>
       </div>
     </section>
   );
