@@ -44,7 +44,7 @@ const Stack = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="page__container -z-0 "
+      className="page__container -z-0"
     >
       <div className="page__wrapper">
         <div className="page__hero">
