@@ -4,7 +4,7 @@ const certifecad = () => {
   return (
     <div>
       newApp
-      <h1>Mis certificados como proggramador web</h1>
+      <h1>Mis certificados como programador web</h1>
     </div>
   );
 };
