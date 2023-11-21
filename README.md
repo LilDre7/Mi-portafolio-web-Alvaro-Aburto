@@ -24,7 +24,7 @@ El portafolio está disponible en [GitHub](https://github.com/LilDre7/mi-portafo
 
 ## Capturas de Pantalla
 
-(https://4kwallpapers.com/images/walls/thumbs_3t/1267.jpg)
+[GitHub](https://4kwallpapers.com/images/walls/thumbs_3t/1267.jpg)
 
 ¡Espero que disfrutes explorando mi portafolio tanto como yo disfruté creándolo!
 
