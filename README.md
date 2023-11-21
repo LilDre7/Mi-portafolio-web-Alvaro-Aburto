@@ -20,11 +20,11 @@
 
 ## Acceso al Portafolio
 
-El portafolio está disponible en [GitHub](enlace a tu repositorio) para que puedas explorarlo y obtener más información sobre mis proyectos y habilidades.
+El portafolio está disponible en [GitHub](https://github.com/LilDre7/mi-portafolio) para que puedas explorarlo y obtener más información sobre mis proyectos y habilidades.
 
 ## Capturas de Pantalla
 
-(Incluye algunas capturas de pantalla del portafolio aquí, si es posible)
+(https://4kwallpapers.com/images/walls/thumbs_3t/1267.jpg)
 
 ¡Espero que disfrutes explorando mi portafolio tanto como yo disfruté creándolo!
 
