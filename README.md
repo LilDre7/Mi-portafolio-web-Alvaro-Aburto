@@ -1,8 +1,8 @@
-# Portafolio de Álvaro Aburto Ocampo
+# Portafolio de Álvaro Aburto Ocampo 🥷🏾
 
 ¡Bienvenido a mi portafolio en línea! Soy Álvaro Aburto Ocampo, y este proyecto representa mi esfuerzo de los últimos 3 días para crear un espacio minimalista que muestre mis habilidades y proyectos. El portafolio está desarrollado utilizando tecnologías modernas y herramientas que describiré a continuación.
 
-## Tecnologías Utilizadas
+## Tecnologías Utilizadas 🛠️
 
 - **ReactJS:** Utilicé ReactJS como biblioteca principal para el desarrollo del portafolio, permitiéndome crear una interfaz de usuario dinámica y eficiente.
 
